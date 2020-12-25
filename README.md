@@ -18,3 +18,6 @@ Topics:
 8. SOLID principles
 9. Docker, Github actions
 10. A Small project on Laravel
+
+[Day 01: Necessary Knowledge Base](./book/day-01-necessary-knowledge-base.md)  
+[Day 04: Standards PSR, Coding styles, Auto Loading](./book/day-04-standards-psr-coding-styles-autoloading.md)  
