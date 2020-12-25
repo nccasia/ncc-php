@@ -18,7 +18,7 @@ Table of contents
 **Standards PSR**
 PSR(PHP Standards Recommendation) - these are documents that lay out how the PHP community has agreed things will be done.
 The standards are developed by the FIG (Framework Interoperability Group), which draws members from all the major frameworks and tools built in PHP. Since they have been very widely adopted around the PHP world
-### 1.1 PSR-0: Auto loading Standard
+## 1. PSR-0: Auto loading Standard
 **Mandatory**
 1. A fully-qualified namespace and class must have the following structure \<Vendor Name>\(<Namespace>\)*<Class Name>
 
@@ -41,7 +41,7 @@ The standards are developed by the FIG (Framework Interoperability Group), which
 
 The standards we set here should be the lowest common denominator for painless autoloader interoperability. You can test that you are following these standards by utilizing this sample SplClassLoader implementation which is able to load PHP 5.3 classes.
 
-### 1.2 PSR-1: Basic Coding Standard
+## 2. PSR-1: Basic Coding Standard
 **Overview**
 
 1. Files MUST use only <?php and <?= tags.
@@ -66,7 +66,7 @@ The standards we set here should be the lowest common denominator for painless a
 
 Method names MUST be declared in camelCase.
 
-### 1.3 PSR-2: Coding Style Guide
+## 3. PSR-2: Coding Style Guide
 This guide extends and expands on PSR-1, the basic coding standard.
 1. Code MUST follow a “coding style guide” PSR [PSR-1].
 
@@ -88,7 +88,7 @@ This guide extends and expands on PSR-1, the basic coding standard.
 
 10. Opening parentheses for control structures MUST NOT have a space after them, and closing parentheses for control structures MUST NOT have a space before.
 
-### 1.4 PSR-3: Logger Interface
+## 4. PSR-3: Logger Interface
 
 1. The LoggerInterface exposes eight methods to write logs to the eight RFC 5424 levels (debug, info, notice, warning, error, critical, alert, emergency).
 
@@ -114,7 +114,7 @@ This guide extends and expands on PSR-1, the basic coding standard.
    
 8. The Psr\Log\LogLevel class holds constants for the eight log levels.
 
-### 1.5 PSR-4: Autoloader
+## 5. PSR-4: Autoloader
 This PSR describes a specification for autoloading classes from file paths. It is fully interoperable, and can be used in addition to any other autoloading specification, including PSR-0. This PSR also describes where to place files that will be autoloaded according to the specification.
 1. The term “class” refers to classes, interfaces, traits, and other similar structures.
 2. A fully qualified class name has the following form:
@@ -140,7 +140,7 @@ The contiguous sub-namespace names after the “namespace prefix” correspond t
 The terminating class name corresponds to a file name ending in .php. The file name MUST match the case of the terminating class name.
 4. Autoloader implementations MUST NOT throw exceptions, MUST NOT raise errors of any level, and SHOULD NOT return a value.
 
-### 1.6 PSR-6: Caching Interface
+## 6. Caching Interface
 Caching is a common way to improve the performance of any project, making caching libraries one of the most common features of many frameworks and libraries. This has lead to a situation where many libraries roll their own caching libraries, with various levels of functionality. These differences are causing developers to have to learn multiple systems which may or may not provide the functionality they need. In addition, the developers of caching libraries themselves face a choice between only supporting a limited number of frameworks or creating a large number of adapter classes.
 Implementing libraries MUST support all serializable PHP data types, including:
 
