@@ -6,12 +6,12 @@ In this section we will learn how to code according to the standards recommended
 
 Table of contents
 
-1. [PSR-0: Auto loading Standard](#psr-0)
-2. [PSR-1: Basic Coding Standard](#psr-1)
-3. [PSR-2: Coding Style Guide](#psr-2)
-4. [PSR-3: Logger Interface](#psr-3)
-5. [PSR-4: Autoloader](#psr-4)
-6. [PSR-6: Caching Interface](#psr-6)
+1. [PSR-0: Auto loading Standard](#1-psr-0-auto-loading-standard)
+2. [PSR-1: Basic Coding Standard](#2-psr-1-basic-coding-standard)
+3. [PSR-2: Coding Style Guide](#3-psr-2-coding-style-guide)
+4. [PSR-3: Logger Interface](#4-psr-3-logger-interface)
+5. [PSR-4: Autoloader](#5-psr-4-autoloader)
+6. [PSR-6: Caching Interface](#6-caching-interface)
 
 ---
 
@@ -140,7 +140,7 @@ The contiguous sub-namespace names after the “namespace prefix” correspond t
 The terminating class name corresponds to a file name ending in .php. The file name MUST match the case of the terminating class name.
 4. Autoloader implementations MUST NOT throw exceptions, MUST NOT raise errors of any level, and SHOULD NOT return a value.
 
-## 6. Caching Interface
+## PSR-6: Caching Interface
 Caching is a common way to improve the performance of any project, making caching libraries one of the most common features of many frameworks and libraries. This has lead to a situation where many libraries roll their own caching libraries, with various levels of functionality. These differences are causing developers to have to learn multiple systems which may or may not provide the functionality they need. In addition, the developers of caching libraries themselves face a choice between only supporting a limited number of frameworks or creating a large number of adapter classes.
 Implementing libraries MUST support all serializable PHP data types, including:
 
