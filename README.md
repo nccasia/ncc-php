@@ -18,3 +18,10 @@ Topics:
 8. SOLID principles
 9. Docker, Github actions
 10. A Small project on Laravel
+
+
+[Day 05: Laravel framework](./book/Day-05-Laravel-framework.md)
+
+[Day 08: SOLID principles](./book/Day-08-SOLID-principles.md)
+    
+[Day 03: SOLID principles](./book/Day-03-Development-tools.md)
