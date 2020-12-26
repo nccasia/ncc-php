@@ -19,5 +19,14 @@ Topics:
 9. Docker, Github actions
 10. A Small project on Laravel
 
+    
+
 [Day 01: Necessary Knowledge Base](./book/day-01-necessary-knowledge-base.md)  
+
+[Day 03: SOLID principles](./book/Day-03-Development-tools.md)
+
 [Day 04: Standards PSR, Coding styles, Auto Loading](./book/day-04-standards-psr-coding-styles-autoloading.md)  
+
+[Day 05: Laravel framework](./book/Day-05-Laravel-framework.md)
+
+[Day 08: SOLID principles](./book/Day-08-SOLID-principles.md)
