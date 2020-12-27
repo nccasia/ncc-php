@@ -134,11 +134,9 @@ Writing comments code isn't always mandatory, but writing them can help with fut
 
 There are 3 ways to write comments in PHP code as follows:
 
-Type "//" at the beginning of the line
-
-Type "#" at the beginning of the line
-
-Or wrap the comment between the two signs "/" and "/"
+- Type "//" at the beginning of the line
+- Type "#" at the beginning of the line
+- Or wrap the comment between the two signs "/" and "/"
 
 **Basic Syntax** 
 
@@ -242,3 +240,8 @@ Zend Engine itself provides a number of libraries available so that PHP can run 
 
 Here are the basic PHP extensions and research documentation:
 https://en.wikipedia.org/wiki/List_of_PHP_extensions
+
+- bcMath
+- cURL
+- mcrypt
+- ...
