@@ -10,123 +10,150 @@
 ##1. GIT
 
 Git is a distributed version control system
+- Git stores information in the form of a list of file-based changes and changes made to each file over time.
 
-**VCS(Version Control System)**
+- In projects where there are often lots of developers working in parallel, 
+Git is essential to ensure there are no code conflicts between developers.
 
-    - 
-    
-- Git lưu trữ thông tin dưới dạng danh sách các thay đổi dựa trên file và những thay đổi được thực hiện đối với 
-mỗi file theo thời gian.
+- Some of the benefits of Git:
+     - Easy to use, fast, quick and safe operation.
+     - Easily combine branches.
+     - Just clone the source code from the repository or clone a modified version from the repository, 
+     or a branch from the repository, and you can work anywhere.
+     - Deployment your product easily.
 
-- Trong các dự án thường có rất nhiều các lập trình viên làm việc song song nên Git là rất cần thiết để đảm bảo 
-không có xung đột code giữa các lập trình viên.
+- Some important Git terms:
+#####1. Branch
+- Branches represent specific instances of a repository separate from your main Project.
+- Branch allows you to keep track of your changes to the repository, so you can roll back to earlier versions.
 
-- 1 số lợi ích của Git:
-     - Dễ sự dụng, thao tác nhanh gọn, lẹ và an toàn.
-     - Dễ dàng kết hợp các phân nhánh (branch).
-     - chỉ cần clone mã nguồn từ kho chứa hoặc clone 1 phiên bản thay đổi nào đó từ kho chứa, hoặc 1 nhánh nào đó
-     từ kho chứa là bạn có thể làm việc mọi lúc mọi nơi.
-     - Deployment sản phẩm của bạn dễ dàng.
+#####2. Commit
+- Commit represents a specific moment in your project history. Using the commit and git add commands keeps your changes saved to local repository.
 
-- 1 số thuật ngữ Git quan trọng:
-
-1. Branch
-- Các Branch(nhánh) đại diện cho các Phiên bản cụ thể của 1 kho lưu trữ tách ra từ Project chính của bạn.
-- Branch cho phép bạn theo dõi các thay đổi của bạn đối với kho lưu trữ, bạn có thể quay về lại các phiên bản cũ hơn.
-
-2. Commit
-- Commit đại diện cho 1 thời điểm cụ thể trong lịch sử dự án của bạn. Sử dụng lệnh commit và git add giúp cho những 
-thay đổi của bạn được lưu vào local repository.
-
-3. Checkout
-- Sử dụng git checkout để chuyển giữa các Branch
+#####3. Checkout
+- Use **git checkout** to switch between branches
     - git checkout "name-branch"
  
-4. Fetch
-- Lệnh git fetch tìm nạp các bản sao và tải xuống tất cả các Branch vào máy tính của bạn
+#####4. Fetch
+- The git fetch command fetches the copies and downloads all branches to your computer.
 
-5. Head
-- Các commit ở đầu của 1 branch được gọi là Head, Nó đại diện cho commit mới nhất của repository mà bạn đang làm việc.
+#####5. Head
+- Commits at the beginning of a branch are called Head. 
+It represents the most recent commit of the repository you are working on.
 
-6.  Index
-- Bất cứ khi nào bạn thêm, sửa, xóa hoặc thay đổi file, nó vẫn nằm trong chỉ mục cho đến khi bạn sẵn sàng commit.
-Sử dụng git status để xem các thay đổi đó (file index).
+#####6.  Index
+- Whenever you add, edit, delete, or change a file, it stays in the index until you're ready to commit.
+  Use git status to see those changes (file index).
 
-7. Master
-- Master là nhánh chính của repository của bạn. Nó bao gồm những thay đổi và commit gần đây nhất.
+#####7. Master
+- Master is the main branch of your repository. It includes the most recent changes and commits.
 
-8. Merge
-- lệnh git merge kết hợp với các yêu cầu kéo (pull requests) để thêm các thay đổi từ nhánh này sang nhánh khác.
+#####8. Merge
+- The git merge command combines pull requests to add changes from branch to branch.
 
-9. Origin
-- git push origin master => để đẩy các thay đổi cục bộ đến nhánh chính.
+#####9. Origin
+- git push origin master => to push local changes to the main branch.
 
-10. Pull
-- Để kéo hết code đã được push về nhánh của bạn
+#####10. Pull
+- To pull all of the pushed code back to your branch
     - git pull
 
-11. Push
-- lệnh git push được sử dụng để đẩy code lên nhánh của bạn.
+#####11. Push
+- The git push command is used to push the code to your branch.
 
-12. Rebase
-- Lệnh git rebase cho phép bạn phân tách, di chuyển, thoát commit . Nó cũng có thể được sử dụng để kết hợp 2 nhánh lại 
-với nhau.
+#####12. Rebase
+- The git rebase command allows you to split, move, and exit a commit. It can also be used to combine two branches.
 
-13. Stash
-- Lệnh git stash để lưu lại các công việc mình đang làm việc trên branch hiện tại, dùng git stash apply để quay trở lại 
-thời điểm chưa git stash. 
+#####13. Stash
+- Lệnh git stash để lưu lại các công việc mình đang làm việc trên branch hiện tại, 
+dùng git stash apply để quay trở lại thời điểm chưa git stash.  
 
 
 ##2. MySQL
-- MySql là một hệ thống quản trị cơ sở dữ liệu mã nguồn mở.
-- 1 số công cụ miễn phí dùng làm MySql:
-    - MySql Workbench (Mac, Windows, Linux), miễn phí, mã nguồn mở.
-    - Sequel Pro (Mac), miễn phí, mã nguồn mở.
-    - HeidiSQL (Windows), miễn phí.
-    - PhpMyAdmin (web app), miễn phí, mã nguồn mở.
+- MySql is an open source database administration system.
+- Some free tools to use as MySql:
+    - MySql Workbench (Mac, Windows, Linux), free, open source.
+    - Sequel Pro (Mac), free, open source.
+    - HeidiSQL (Windows), free.
+    - PhpMyAdmin (web app), free, open source.
     
-- Cách hoạt động của MySql
-    - MySql tạo ra bảng để lưu trữ dữ liệu, định nghĩa sự liên quan giữa các bảng đó.
-    - Client sẽ gửi yêu cầu SQL bằng một mệnh lệnh đặc biệt trên MySql.
-    - Ứng dụng trên server sẽ phản hồi thông tin và trả về kết quả trên máy client.
+- How MySql works
+    - MySql creates tables to store data, defining the relationships between those tables.
+    - The client sends the SQL request with a special command on MySql.
+    - The application on the server will respond to the information and return the results on the client machine.
     
 ##3. Apache
-- Apache (Apache HTTP Server) là 1 Chương trình máy chủ giao tiếp bằng giao thức HTTP và hoạt động trên hầu hết các hệ 
-điều hành như: Linux, Windows, Unix và nhiều hệ điều hành khác.
+- Apache (Apache HTTP Server) is a server program that communicates using the HTTP protocol 
+and works on most operating systems such as Linux, Windows, Unix and many other operating systems.
 
-- Apache đóng vai trò quan trọng trong quá trình phát triển mạng web thể giới www.
+- Apache plays an important role in the development of the world web www.
 
-- Cách cài đặt Apache lên Windows:
-    - Bước 1: **Download Apache** phiên bản 64 bit hoặc 32 bit.
-    - Bước 2: Cài đặt Apache. Sau khi download thì tiến hành giải nén thư mục Apache24 vào ổ C.
-    - Bước 3: Khởi động Apache: Vào thư mục **C:Apache24bin** và chạy file **httpd.exe**, khi có thông báo "**It works!**" hiện lên 
-    hoặc nếu vào http://localhost kiểm tra thấy dòng "**It works!**" thì bạn đã cài đặt thành công.
+- How to install Apache on Windows:
+    - Step 1: **Download Apache** 64 bit or 32 bit version.
+    - Step 2: install Apache. After downloading, proceed to extract the Apache24 directory to drive C.
+    - Step 3: Start Apache: Go to the folder ** C: Apache24bin ** and run the file ** httpd.exe **, 
+    when the message "** It works! **" pops up or if you go to http: // localhost, 
+    check the line "* * It works! ** "then you have installed it successfully.
 
 ##4. OpenServer
-- OpenServer là phần mềm tạo webserver trên windows của Nga, và có rất nhiều tiện ích hay được tích hợp sẵn.
-- OpenServer cung cấp cho người dùng rất nhiều nền tảng để kiếm tra sản phẩm của mình và chạy tốt trên tất cả những
-môi trường.
-- OpenServer có tích hợp sẵn các biến môi trường bên trong nó khi làm việc với Laravel.
+- OpenServer is a software for creating webserver on windows from Russia, and there are many good utilities built in.
+- OpenServer provides users with a variety of platforms to test their products and run well in all environments.
+- OpenServer has built-in environment variables within it when working with Laravel.
 
-- Download và cài đặt OpenServer
-    - Bước 1: Truy cập "link" và chọn 1 file cài đặt và file cấu hình tương ứng để tải về và cài đặt.
-    - Bước 2: Sau khi đã tải về ta sẽ có 1 file với tên Open_server_***.exe, bạn chạy file để bắt đầu cài đặt.
-    - Bước 3: Cấu hình và sử dụng OpenServer.
-    - Để dễ hình dung hơn về quá trình cài đặt, bạn vào [Link cài đặt](https://freetuts.net/cai-dat-openserver-va-tao-domain-ao-tren-localhost-281.html)
+- Download và install OpenServer
+    - Step 1: Access the [link download](https://ospanel.io/) and select an installation file and corresponding configuration file to download and install.
+    - Step 2: Once downloaded we will have a file with the name Open_server _ ***. Exe, run the file to begin the installation.
+    - Step 3: Configure and use OpenServer.
+    - To make it easier to visualize the installation process, you go to [Link cài đặt](https://freetuts.net/cai-dat-openserver-va-tao-domain-ao-tren-localhost-281.html)
     
 ##5. PhpStorm
-- Phpstorm là một môi trường phát triển tích hợp (IDE), đa nền tảng cho PHP, được xây dựng bởi công ty JetBrains,
-hãng phần mềm hàng đầu thế giới về các công cụ cho lập trình và phát triển.
+- Phpstorm is a cross-platform, integrated development environment (IDE) for PHP, 
+built by JetBrains, the world's leading software maker for programming and development tools.
 
-- PhpStorm cung cấp trình soạn thảo cho PHP, HTML và JavaScript với khả năng phân tích mã nhanh, 
-ngăn ngừa lỗi và tái cấu trúc tự động cho mã PHP và JavaScript.
+- PhpStorm provides an editor for PHP, HTML and JavaScript with fast code analysis, 
+error prevention, and automatic refactoring for PHP and JavaScript code.
 
-- Tính đến năm 2020, có khoảng 600.000 người dùng sử dụng bản quyền phần mềm PhpStorm trên toàn thế giới.
+- By 2020, there are about 600,000 users using copyright PhpStorm software worldwide.
 
 **Install Phpstorm**
-- Các bạn tham khảo link sau: 
+- Please refer to the following link:
 [link download and setup phpstorm](https://khophanmem24h.com/download-phpstorm-2019/)
 
 ##6. Chrome dev tool
-- 
+The Chrome Developer Tool is a suite of tools that are hugely supportive for developers built into Google Chrome. 
+DevTools provides web developers with internal access to their browsers and web applications. 
+Use DevTools to efficiently edit HTML, CSS, and JavaScript and get insights to optimize code.
 
+**Elements**
+
+This tab displays the HTML of the web page elements.
+We can directly edit the CSS of an element in the right pane, see the results immediately.
+
+![Alt text](images/element-html.png)
+
+**Networks**
+
+On this tab, we can see all the things downloaded by the browser from the server: HTML, CSS, JS, images, ... 
+You can also click on each request to see the results returned from the server, check error.
+
+![Alt text](images/network.png)
+
+**Console**
+
+We can directly enter the js code here to run, this is a great feature to be able to test each js code individually.
+The errors related to javascript (not load, syntax, ...) will show up in this tab.
+
+![Alt text](images/console.png)
+
+**Sources**
+
+This tab shows the js files that the browser can load. At this tab, you can debug code js with breakpoints.
+
+![Alt text](images/sources.png)
+
+
+**References**
+
+- [https://developers.google.com/web/tools/chrome-devtools/](https://developers.google.com/web/tools/chrome-devtools/)
+
+- [https://developer.chrome.com/devtools](https://developer.chrome.com/devtools)
