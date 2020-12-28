@@ -78,9 +78,44 @@ thời điểm chưa git stash.
 
 
 ##2. MySQL
-
+- MySql là một hệ thống quản trị cơ sở dữ liệu mã nguồn mở.
+- 1 số công cụ miễn phí dùng làm MySql:
+    - MySql Workbench (Mac, Windows, Linux), miễn phí, mã nguồn mở.
+    - Sequel Pro (Mac), miễn phí, mã nguồn mở.
+    - HeidiSQL (Windows), miễn phí.
+    - PhpMyAdmin (web app), miễn phí, mã nguồn mở.
+    
+- Cách hoạt động của MySql
+    - MySql tạo ra bảng để lưu trữ dữ liệu, định nghĩa sự liên quan giữa các bảng đó.
+    - Client sẽ gửi yêu cầu SQL bằng một mệnh lệnh đặc biệt trên MySql.
+    - Ứng dụng trên server sẽ phản hồi thông tin và trả về kết quả trên máy client.
+    
 ##3. Apache
+- Apache (Apache HTTP Server) là 1 Chương trình máy chủ giao tiếp bằng giao thức HTTP và hoạt động trên hầu hết các hệ 
+điều hành như: Linux, Windows, Unix và nhiều hệ điều hành khác.
+
+- Apache đóng vai trò quan trọng trong quá trình phát triển mạng web thể giới www.
+
+- Cách cài đặt Apache lên Windows:
+    - Bước 1: **Download Apache** phiên bản 64 bit hoặc 32 bit.
+    - Bước 2: Cài đặt Apache. Sau khi download thì tiến hành giải nén thư mục Apache24 vào ổ C.
+    - Bước 3: Khởi động Apache: Vào thư mục **C:Apache24bin** và chạy file **httpd.exe**, khi có thông báo "**It works!**" hiện lên 
+    hoặc nếu vào http://localhost kiểm tra thấy dòng "**It works!**" thì bạn đã cài đặt thành công.
+
 ##4. OpenServer
+- OpenServer là phần mềm tạo webserver trên windows của Nga, và có rất nhiều tiện ích hay được tích hợp sẵn.
+- OpenServer cung cấp cho người dùng rất nhiều nền tảng để kiếm tra sản phẩm của mình và chạy tốt trên tất cả những
+môi trường.
+- OpenServer có tích hợp sẵn các biến môi trường bên trong nó khi làm việc với Laravel.
+
+- Download và cài đặt OpenServer
+    - Bước 1: Truy cập "link" và chọn 1 file cài đặt và file cấu hình tương ứng để tải về và cài đặt.
+    - Bước 2: Sau khi đã tải về ta sẽ có 1 file với tên Open_server_***.exe, bạn chạy file để bắt đầu cài đặt.
+    - Bước 3: Cấu hình và sử dụng OpenServer.
+    - Để dễ hình dung hơn về quá trình cài đặt, bạn vào [Link cài đặt](https://freetuts.net/cai-dat-openserver-va-tao-domain-ao-tren-localhost-281.html)
+    
 ##5. PhpStorm
+
+
 ##6. Chrome dev tool
 
