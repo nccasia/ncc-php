@@ -115,7 +115,18 @@ môi trường.
     - Để dễ hình dung hơn về quá trình cài đặt, bạn vào [Link cài đặt](https://freetuts.net/cai-dat-openserver-va-tao-domain-ao-tren-localhost-281.html)
     
 ##5. PhpStorm
+- Phpstorm là một môi trường phát triển tích hợp (IDE), đa nền tảng cho PHP, được xây dựng bởi công ty JetBrains,
+hãng phần mềm hàng đầu thế giới về các công cụ cho lập trình và phát triển.
 
+- PhpStorm cung cấp trình soạn thảo cho PHP, HTML và JavaScript với khả năng phân tích mã nhanh, 
+ngăn ngừa lỗi và tái cấu trúc tự động cho mã PHP và JavaScript.
+
+- Tính đến năm 2020, có khoảng 600.000 người dùng sử dụng bản quyền phần mềm PhpStorm trên toàn thế giới.
+
+**Install Phpstorm**
+- Các bạn tham khảo link sau: 
+[link download and setup phpstorm](https://khophanmem24h.com/download-phpstorm-2019/)
 
 ##6. Chrome dev tool
+- 
 
