@@ -7,11 +7,7 @@
 
 ##1. About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. 
-We believe development must be an enjoyable, creative experience to be truly fulfilling.
-
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. 
-A superb combination of simplicity, elegance, and innovation gives you a complete toolset required to build any application with which you are tasked.
+Laravel is a PHP Framework 
 
 ##2. Learning Laravel
 
