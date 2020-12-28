@@ -34,11 +34,13 @@ Other topics:
 
 [Chapter 02: OOP, design patterns](./book/Chapter-02-oop-design-pattern.md)  
 
-[Chapter 03: SOLID principles](./book/Chapter-03-Development-tools.md)
+[Chapter 03: Development tools](./book/Chapter-03-Development-tools.md)
 
 [Chapter 04: Standards PSR, Coding styles, Auto Loading](./book/Chapter-04-standards-psr-coding-styles-autoloading.md)  
 
 [Chapter 05: Laravel framework](./book/Chapter-05-Laravel-framework.md)
+
+[Chapter 06: Unit test](./book/Chapter-06-unittest.md)
 
 [Chapter 08: SOLID principles](./book/Chapter-08-SOLID-principles.md)
 
