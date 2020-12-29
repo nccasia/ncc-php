@@ -136,6 +136,11 @@ There are also other standards, For better understanding, you can refer to the f
 4. From the list that appears, select the language to copy the code style from.
 
 ![Alt text](images/copyCodeStyle.png?raw=true "CodeStyle")
+
+**Format code in PhpStorm Editor**
+
+We highlight the code to be formatted. Then simultaneously press 3 keys "Crtl + Alt + L"
+
 # Composer
 Composer is a dependency manager for PHP (similar to Bundler for Ruby apps). Composer allows developers to specify project dependencies in a composer.json file and then Composer automatically handles the rest.
 
