@@ -7,11 +7,9 @@
 
 ##1. About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. 
-We believe development must be an enjoyable, creative experience to be truly fulfilling.
-
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications. 
-A superb combination of simplicity, elegance, and innovation gives you a complete toolset required to build any application with which you are tasked.
+Laravel is a free and open source PHP Framework, developed by Taylor Otwell 
+and targeted to support the development of web applications in a model-view-controller (MVC) architecture.
+Laravel includes an easy-to-understand syntax, Many different utilities support deployment into application maintenance.
 
 ##2. Learning Laravel
 
