@@ -1,12 +1,12 @@
-# OOP - Lập trình hướng đối tượng
+# OOP
 
-## 1. OOP là gì
+## 1. What's OOP?
 
-**OOP là viết tắt của Object-oriented programming, là một mẫu hình lập trình dựa trên khái niệm "công nghệ đối tượng", mà trong đó, đối tượng chứa đựng các thuộc tính, trên các trường, thường được gọi là các thuộc tính; và mã nguồn, được tổ chức thành các phương thức. Phương thức giúp cho đối tượng có thể truy xuất và hiệu chỉnh các trường dữ liệu của đối tượng khác, mà đối tượng hiện tại có tương tác (theo wiki)**
+**OOP Object-oriented programming (OOP) is a programming paradigm based on the concept of "objects", which can contain data and code: data in the form of fields (often known as attributes or properties), and code, in the form of procedures (often known as methods).**
 
-Nôm na có thể hiểu lập trình hướng đối tượng là tập hợp các functions trong một class và class này sẽ dùng để xử lý dữ liệu của một đối tượng cụ thể hoặc các đối tượng có chung thuộc tính.
+It can be understood that OOP is a set of functions in a class and this class will be used to process data of a particular object or objects that share properties.
 
-Ví dụ:
+Example:
 ```php
     class Person()
     {
@@ -34,28 +34,27 @@ Ví dụ:
     }
 ```
 
-Class trên xử lý chung cho các tất cả các đối tượng là người có các thuộc tính là "name" và "age"
+The above class handles all objects that have the attributes "name" and "age".
 
-## 2. Các tính chất cơ bản
+## 2. Basic properties
 
-**Tính trừu tượng (abstraction)**: Đây là khả năng của chương trình bỏ qua hay không chú ý đến một số khía cạnh của thông tin mà nó đang trực tiếp làm việc lên, nghĩa là nó có khả năng tập trung vào những cốt lõi cần thiết. Mỗi đối tượng phục vụ như là một "động tử" có thể hoàn tất các công việc một cách nội bộ, báo cáo, thay đổi trạng thái của nó và liên lạc với các đối tượng khác mà không cần cho biết làm cách nào đối tượng tiến hành được các thao tác. Tính chất này thường được gọi là sự trừu tượng của dữ liệu.
-Tính trừu tượng còn thể hiện qua việc một đối tượng ban đầu có thể có một số đặc điểm chung cho nhiều đối tượng khác như là sự mở rộng của nó nhưng bản thân đối tượng ban đầu này có thể không có các biện pháp thi hành. Tính trừu tượng này thường được xác định trong khái niệm gọi là lớp trừu tượng hay lớp cơ sở trừu tượng.
+**Abstraction**: Abstraction is one of the key concepts of object-oriented programming (OOP) languages. Its main goal is to handle complexity by hiding unnecessary details from the user. That enables the user to implement more complex logic on top of the provided abstraction without understanding or even thinking about all the hidden complexity.
 
-**Tính đóng gói (encapsulation) và che giấu thông tin (information hiding)**: Tính chất này không cho phép người sử dụng các đối tượng thay đổi trạng thái nội tại của một đối tượng. Chỉ có các phương thức nội tại của đối tượng cho phép thay đổi trạng thái của nó. Việc cho phép môi trường bên ngoài tác động lên các dữ liệu nội tại của một đối tượng theo cách nào là hoàn toàn tùy thuộc vào người viết mã. Đây là tính chất đảm bảo sự toàn vẹn của đối tượng.
+**Encapsulation**: encapsulation refers to the bundling of data with the methods that operate on that data, or the restricting of direct access to some of an object's components.[1] Encapsulation is used to hide the values or state of a structured data object inside a class, preventing unauthorized parties' direct access to them. Publicly accessible methods are generally provided in the class (so-called "getters" and "setters") to access the values, and other client classes call these methods to retrieve and modify the values within the object..
 
-**Tính đa hình (polymorphism)**: Thể hiện thông qua việc gửi các thông điệp (message). Việc gửi các thông điệp này có thể so sánh như việc gọi các hàm bên trong của một đối tượng. Các phương thức dùng trả lời cho một thông điệp sẽ tùy theo đối tượng mà thông điệp đó được gửi tới sẽ có phản ứng khác nhau. Người lập trình có thể định nghĩa một đặc tính (chẳng hạn thông qua tên của các phương thức) cho một loạt các đối tượng gần nhau nhưng khi thi hành thì dùng cùng một tên gọi mà sự thi hành của mỗi đối tượng sẽ tự động xảy ra tương ứng theo đặc tính của từng đối tượng mà không bị nhầm lẫn.
+**Polymorphism**: Polymorphism is one of the core concepts in OOP languages. It describes the concept that different classes can be used with the same interface. Each of these classes can provide its own implementation of the interface.
 
-**Tính kế thừa (inheritance)**: Đặc tính này cho phép một đối tượng có thể có sẵn các đặc tính mà đối tượng khác đã có thông qua kế thừa. Điều này cho phép các đối tượng chia sẻ hay mở rộng các đặc tính sẵn có mà không phải tiến hành định nghĩa lại. Tuy nhiên, không phải ngôn ngữ định hướng đối tượng nào cũng có tính chất này.
+**Inheritance**: Inheritance is one of the core concepts of object-oriented programming (OOP) languages. It is a mechanism where you can to derive a class from another class for a hierarchy of classes that share a set of attributes and methods.
 
 # Design Pattern
 
-### **1. Design pattern là gì?**
+### **1. What's Design pattern?**
 
-Design pattern là các mẫu giải pháp đã được tối ưu hóa, được sử dụng cho các vấn đề phổ biến thường gặp phải trong thiết kế phần mềm, giúp giải quyết vấn đề một cách tối ưu nhất.
+Design pattern is a general repeatable solution to a commonly occurring problem in software design. A design pattern isn't a finished design that can be transformed directly into code. It is a description or template for how to solve a problem that can be used in many different situations.
 
-### **2. Phân loại các mẫu design pattern**
+### **2. Classification of design patterns**
 
-Hệ thống các mẫu design pattern được chia thành 3 nhóm: nhóm Creational (5 mẫu), nhóm Structural (7 mẫu) và nhóm Behavioral (11 mẫu).
+The design pattern system is divided into 3 groups: Creational (5 models), Structural (7 models) and Behavioral (11 models).
 
 ##### Creational Patterns
     Abstract Factory
@@ -86,13 +85,49 @@ Hệ thống các mẫu design pattern được chia thành 3 nhóm: nhóm Creat
     Template method
     Visitor
     
-#**3. Giới thiệu nhóm Creational Patterns**
-**Creational Design Patterns là nhóm mẫu khởi tạo. Trong thiết kế phần mềm, các mẫu thiết kế creational là các mẫu thiết kế đối ứng với các cơ chế tạo đối tượng, cố gắng tạo các đối tượng theo cách phù hợp với từng tình huống. Các hình thức cơ bản của việc tạo đối tượng là kết quả của các vấn đề thiết kế hoặc sự phức tạp trong vấn đề thiết kế. Các mẫu thiết kế creational giải quyết vấn đề này bằng cách kiểm soát việc tạo các đối tượng.**
+#**3. Creational Design Patterns**
+**Creational patterns provide various object creation mechanisms, which increase flexibility and reuse of existing code.**
 
-1. Mẫu Abstract Factory.
+#####[1. Abstract Factory Pattern](design-patterns/creational-patterns/01-abstract-factory.md)  
+
+#####[2. Builder Design Pattern](design-patterns/creational-patterns/02-builder.md)
     
-2. Mẫu Builder
-3. Mẫu Factory
-4. Mẫu Prototype
-5. Mẫu Singleton
+#####[3. Factory Pattern (Factory Method Pattern)](design-patterns/creational-patterns/03-factory.md)
+
+#####[4. Prototype Pattern](design-patterns/creational-patterns/04-prototype.md)
+
+#####[5. Singleton Pattern](design-patterns/creational-patterns/05-singleton.md)
+
+#**4. Structural Patterns**
+
+**Structural patterns explain how to assemble objects and classes into larger structures while keeping these structures flexible and efficient.**
+
+#####[1. Adapter Structure Pattern](design-patterns/structural-patterns/01-adapter.md)
+
+#####[2. Bridge Structure Pattern](design-patterns/structural-patterns/02-bridge.md)
+
+#####[3. Composite Structure Pattern](design-patterns/structural-patterns/03-composite.md)
+
+#####[4. Decorator Structure Pattern](design-patterns/structural-patterns/04-decorator.md)
+
+#####[5. Facade Structure Pattern](design-patterns/structural-patterns/05-facade.md)
+
+#####[6. Flyweight Structure Pattern](design-patterns/structural-patterns/06-flyweight.md)
+
+#####[7. Proxy Structure Pattern](design-patterns/structural-patterns/07-proxy.md)
+
+#**5. Behavioral Patterns**
+
+#####[1. Chain of responsibility Behavioral Pattern](design-patterns/structural-patterns/01-adapter.md)
+#####[2. Command Behavioral Pattern](design-patterns/structural-patterns/01-adapter.md)
+#####[3. Interpreter Behavioral Pattern](design-patterns/structural-patterns/01-adapter.md)
+#####[4. Iterator Behavioral Pattern](design-patterns/structural-patterns/01-adapter.md)
+#####[5. Mediator Behavioral Pattern](design-patterns/structural-patterns/01-adapter.md)
+#####[6. Memento Behavioral Pattern](design-patterns/structural-patterns/01-adapter.md)
+#####[7. Observer Behavioral Pattern](design-patterns/structural-patterns/01-adapter.md)
+#####[8. State Behavioral Pattern](design-patterns/structural-patterns/01-adapter.md)
+#####[9. Strategy Behavioral Pattern](design-patterns/structural-patterns/01-adapter.md)
+#####[10. Template method Behavioral Pattern](design-patterns/structural-patterns/01-adapter.md)
+#####[11. Visitor Behavioral Pattern](design-patterns/structural-patterns/01-adapter.md)
+#####[12. Command Behavioral Pattern](design-patterns/structural-patterns/01-adapter.md)
 
