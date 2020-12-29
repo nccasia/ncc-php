@@ -1,4 +1,4 @@
-# Day 01: Necessary Knowledge Base
+# Chapter 01: Necessary Knowledge Base
 
 These are the basic knowledge required to be able to get started with PHP.
 This series focuses on PHP, so this knowledge only stops at the level of listing and introduction.
@@ -45,7 +45,7 @@ CSS is a language to create style for the website - Cascading Style Sheet langua
 It distinguishes the appearance of the web page from the main content of the page by controlling the layout, color, and font.
 ### 2.2 Css syntax structure
 Here is an example of one of the simplest Css templates.
-```scss
+```css
 body {
     background-color: black;
     color: #fff;
@@ -95,7 +95,7 @@ Ways you can style an HTML element.
 3. Attribute value
 To the right of the property after the colon (:), we have the property value, which chooses one out of as many possible occurrences for a particular property (color has a lot of values ​​beyond red).
 
-To learn more about other properties of Css, learn more at the following link:
+To learn more about other properties of CSS, learn more at the following link:
 
 [https://www.w3schools.com/css](https://www.w3schools.com/css/)
 
@@ -144,18 +144,18 @@ There are 3 ways to write comments in PHP code as follows:
 
 When writing software, there are reusable information strings that are saved as variables.
 
-Variables can be used to store almost any type of data, from long text strings, to numbers, true false (Boolean) ...
+Variables can be used to store almost any type of data, from long text strings to numbers, true-false (Boolean) ...
 
 However, PHP has some predefined variables that cannot be overridden, such as $ GLOBALS, or $ _GET.
 
 For example we have the following code:
 ```php
 <?php
-    $name = ‘ncc’;
+    $name = ‘NCC’;
     echo $name;
 ?>
 ```
-Then, the text "ncc" will be displayed on the interface, since it is saved as a string in the variable "$ name", the variable "$ name" can then be changed according to the logic of the application.
+Then, the text "NCC" will be displayed on the interface, since it is saved as a string in the variable "$ name", the variable "$ name" can then be changed according to the logic of the application.
 
 There are several rules for defining variables in PHP as follows:
 
@@ -167,7 +167,7 @@ Variable names starting with digits 0-9 cannot be named
 
 Japanese can also be used as variable names, but it shouldn't be
 
-Naming variables are not too strict, but should be set so that it is clear, easy to understand and true of the variable nature.
+Naming variables are not too strict but should be set so that it is clear, easy to understand, and true of the variable nature.
 
 **Operators**
 
@@ -208,7 +208,7 @@ The "while" code is used to run the code repeatedly, until the while condition i
     }
 ?>
 ```
-The text "Run 5 times" will display exactly 5 times on the screen, until the variable "$ increment" is incremented by 1 after 5 loops and the final value after 5 increments is greater than 5.
+The text "Run 5 times" will display exactly 5 times on the screen, until the variable "$ increment" is incremented by 1 after 5 loops and the final value after 5 increments are greater than 5.
 
 **Function declaration**
 

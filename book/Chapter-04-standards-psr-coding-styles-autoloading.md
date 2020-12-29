@@ -1,18 +1,16 @@
-# Day 04: Standards PSR, Coding styles, Auto Loading
+# Chapter 04: Standards PSR, Coding styles, Auto Loading
 
-Each project when executed will use a multitude of libraries, famework, and components.
+Each project when executed will use a multitude of libraries, frameworks, and components.
 So in order to easily combine different libraries for the project, the coding should follow a general rule.
-In this section we will learn how to code according to the standards recommended by the php community
+In this section we will learn how to code according to the standards recommended by the PHP community
 
 Table of contents
 
-- [Day 04: Standards PSR, Coding styles, Auto Loading](#day-04-standards-psr-coding-styles-auto-loading)
+- [Standards PSR, Coding styles, Auto Loading](#standards-psr-coding-styles-auto-loading)
   - [1. PSR-0: Auto loading Standard](#1-psr-0-auto-loading-standard)
   - [2. PSR-1: Basic Coding Standard](#2-psr-1-basic-coding-standard)
   - [3. PSR-2: Coding Style Guide](#3-psr-2-coding-style-guide)
-  - [4. PSR-3: Logger Interface](#4-psr-3-logger-interface)
-  - [5. PSR-4: Autoloader](#5-psr-4-autoloader)
-  - [PSR-6: Caching Interface](#psr-6-caching-interface)
+  - [4. PSR-4: Autoloader](#4-psr-4-autoloader)
 - [How to setup style configuration on PhpStorm](#how-to-setup-style-configuration-on-phpstorm)
 - [Composer](#composer)
 
@@ -44,6 +42,9 @@ The standards are developed by the FIG (Framework Interoperability Group), which
 
 The standards we set here should be the lowest common denominator for painless autoloader interoperability. You can test that you are following these standards by utilizing this sample SplClassLoader implementation which is able to load PHP 5.3 classes.
 
+For better understanding, you can refer to the following documents:
+[https://www.php-fig.org/psr/psr-0/](https://www.php-fig.org/psr/psr-0/)
+
 ## 2. PSR-1: Basic Coding Standard
 **Overview**
 
@@ -59,15 +60,14 @@ The standards we set here should be the lowest common denominator for painless a
 
 6. Class constants MUST be declared in all upper case with underscore separators.
 
-7. PHP code MUST use the long <?php ?> tags or the short-echo <?= ?> tags; it MUST NOT use the other tag variations.
+7. This guide intentionally avoids any recommendation regarding the use of $StudlyCaps, $camelCase, or $under_score property names.
+   
+   Whatever naming convention is used SHOULD be applied consistently within a reasonable scope. That scope may be vendor-level, package-level, class-level, or method-level. 
 
-8. PHP code MUST use only UTF-8 without BOM.\
+8. Method names MUST be declared in camelCase().
 
-9. Namespaces and classes MUST follow an “autoloading” PSR: [PSR-0, PSR-4].
-
-10. The term “class” refers to all classes, interfaces, and traits. Method names MUST be declared in camelCase().
-
-Method names MUST be declared in camelCase.
+For better understanding, you can refer to the following documents:
+[https://www.php-fig.org/psr/psr-1/](https://www.php-fig.org/psr/psr-1/)
 
 ## 3. PSR-2: Coding Style Guide
 This guide extends and expands on PSR-1, the basic coding standard.
@@ -91,36 +91,13 @@ This guide extends and expands on PSR-1, the basic coding standard.
 
 10. Opening parentheses for control structures MUST NOT have a space after them, and closing parentheses for control structures MUST NOT have a space before.
 
-## 4. PSR-3: Logger Interface
+For better understanding, you can refer to the following documents:
+[https://www.php-fig.org/psr/psr-2/](https://www.php-fig.org/psr/psr-2/)
 
-1. The LoggerInterface exposes eight methods to write logs to the eight RFC 5424 levels (debug, info, notice, warning, error, critical, alert, emergency).
-
-2. Every method accepts a string as the message, or an object with a __toString() method. Implementors MAY have special handling for the passed objects. If that is not the case, implementors MUST cast it to a string.
-   
-   The message MAY contain placeholders which implementors MAY replace with values from the context array.
-   
-   Placeholder names MUST correspond to keys in the context array.
-   
-   Placeholder names MUST be delimited with a single opening brace { and a single closing brace }. There MUST NOT be any whitespace between the delimiters and the placeholder name.
-   
-   Placeholder names SHOULD be composed only of the characters A-Z, a-z, 0-9, underscore _, and period .. The use of other characters is reserved for future modifications of the placeholders specification.
-   
-3. The Psr\Log\AbstractLogger class lets you implement the LoggerInterface very easily by extending it and implementing the generic log method. The other eight methods are forwarding the message and context to it.
-   
-4. Similarly, using the Psr\Log\LoggerTrait only requires you to implement the generic log method. Note that since traits can not implement interfaces, in this case you still have to implement LoggerInterface.
-   
-5. The Psr\Log\NullLogger is provided together with the interface. It MAY be used by users of the interface to provide a fall-back “black hole” implementation if no logger is given to them. However, conditional logging may be a better approach if context data creation is expensive.
-   
-6. The Psr\Log\LoggerAwareInterface only contains a setLogger(LoggerInterface $logger) method and can be used by frameworks to auto-wire arbitrary instances with a logger.
-   
-7. The Psr\Log\LoggerAwareTrait trait can be used to implement the equivalent interface easily in any class. It gives you access to $this->logger.
-   
-8. The Psr\Log\LogLevel class holds constants for the eight log levels.
-
-## 5. PSR-4: Autoloader
+## 4. PSR-4: Autoloader
 This PSR describes a specification for autoloading classes from file paths. It is fully interoperable, and can be used in addition to any other autoloading specification, including PSR-0. This PSR also describes where to place files that will be autoloaded according to the specification.
-1. The term “class” refers to classes, interfaces, traits, and other similar structures.
-2. A fully qualified class name has the following form:
+- The term “class” refers to classes, interfaces, traits, and other similar structures.
+- A fully qualified class name has the following form:
 
 ` \<NamespaceName>(\<SubNamespaceNames>)*\<ClassName>`
 
@@ -135,41 +112,61 @@ Underscores have no special meaning in any portion of the fully qualified class 
 Alphabetic characters in the fully qualified class name MAY be any combination of lower case and upper case.
 
 All class names MUST be referenced in a case-sensitive fashion.
-3. When loading a file that corresponds to a fully qualified class name …
+- When loading a file that corresponds to a fully qualified class name …
 A contiguous series of one or more leading namespace and sub-namespace names, not including the leading namespace separator, in the fully qualified class name (a “namespace prefix”) corresponds to at least one “base directory”.
 
 The contiguous sub-namespace names after the “namespace prefix” correspond to a subdirectory within a “base directory”, in which the namespace separators represent directory separators. The subdirectory name MUST match the case of the sub-namespace names.
 
 The terminating class name corresponds to a file name ending in .php. The file name MUST match the case of the terminating class name.
-4. Autoloader implementations MUST NOT throw exceptions, MUST NOT raise errors of any level, and SHOULD NOT return a value.
+- Autoloader implementations MUST NOT throw exceptions, MUST NOT raise errors of any level, and SHOULD NOT return a value.
 
-## PSR-6: Caching Interface
-Caching is a common way to improve the performance of any project, making caching libraries one of the most common features of many frameworks and libraries. This has lead to a situation where many libraries roll their own caching libraries, with various levels of functionality. These differences are causing developers to have to learn multiple systems which may or may not provide the functionality they need. In addition, the developers of caching libraries themselves face a choice between only supporting a limited number of frameworks or creating a large number of adapter classes.
-Implementing libraries MUST support all serializable PHP data types, including:
+For better understanding, you can refer to the following documents:
+[https://www.php-fig.org/psr/psr-2/](https://www.php-fig.org/psr/psr-2/)
 
-1. Strings - Character strings of arbitrary size in any PHP-compatible encoding.
-2. Integers - All integers of any size supported by PHP, up to 64-bit signed.
-3. Floats - All signed floating point values.
-4. Boolean - True and False.
-5. Null - The actual null value.
-6. Arrays - Indexed, associative and multidimensional arrays of arbitrary depth.
-7. Object - Any object that supports lossless serialization and deserialization such that $o == unserialize(serialize($o)). Objects MAY leverage PHP’s Serializable interface, __sleep() or __wakeup() magic methods, or similar language functionality if appropriate.
-8. All data passed into the Implementing Library MUST be returned exactly as passed. That includes the variable type. That is, it is an error to return (string) 5 if (int) 5 was the value saved. Implementing Libraries MAY use PHP’s serialize()/unserialize() functions internally but are not required to do so. Compatibility with them is simply used as a baseline for acceptable object values.
-
-If it is not possible to return the exact saved value for any reason, implementing libraries MUST respond with a cache miss rather than corrupted data.
-
-The Pool represents a collection of items in a caching system. The pool is a logical Repository of all items it contains. All cacheable items are retrieved from the Pool as an Item object, and all interaction with the whole universe of cached objects happens through the Pool.
-
-While caching is often an important part of application performance, it should never be a critical part of application functionality. Thus, an error in a cache system SHOULD NOT result in application failure. For that reason, Implementing Libraries MUST NOT throw exceptions other than those defined by the interface, and SHOULD trap any errors or exceptions triggered by an underlying data store and not allow them to bubble.
-
-CacheItemInterface defines an item inside a cache system. Each Item object MUST be associated with a specific key, which can be set according to the implementing system and is typically passed by the Cache\CacheItemPoolInterface object.
-
-The Cache\CacheItemInterface object encapsulates the storage and retrieval of cache items. Each Cache\CacheItemInterface is generated by a Cache\CacheItemPoolInterface object, which is responsible for any required setup as well as associating the object with a unique Key. Cache\CacheItemInterface objects MUST be able to store and retrieve any type of PHP value defined in the Data section of this document.
-
-Calling Libraries MUST NOT instantiate Item objects themselves. They may only be requested from a Pool object via the getItem() method. Calling Libraries SHOULD NOT assume that an Item created by one Implementing Library is compatible with a Pool from another Implementing Library.
-
+There are also other standards, For better understanding, you can refer to the following documents:
+[https://www.php-fig.org/psr/](https://www.php-fig.org/psr/)
 
 # How to setup style configuration on PhpStorm
+1. In the Settings/Preferences dialog Ctrl+Alt+S, go to Editor | Code Style and open the page of your programming language.
 
+2. Click Set From in the upper-right corner.
+
+3. The link is shown for those languages only, where defining settings on the base of other languages is applicable.
+
+4. From the list that appears, select the language to copy the code style from.
+
+![Alt text](images/copyCodeStyle.png?raw=true "CodeStyle")
 # Composer
+Composer is a dependency manager for PHP (similar to Bundler for Ruby apps). Composer allows developers to specify project dependencies in a composer.json file and then Composer automatically handles the rest.
 
+Composer makes it easier to keep vendor libraries out of your repo, meaning that only application code goes in the git repository. It also makes maintaining the latest versions of all required libraries easier because you can simply run composer update to get the latest compatible packages.
+
+**Installation Composer**
+This is the easiest way to get Composer set up on your machine.
+
+Download and run [Composer-Setup.exe](https://getcomposer.org/Composer-Setup.exe). It will install the latest Composer version and set up your PATH so that you can call composer from any directory in your command line.
+
+Test usage with a new terminal:
+```
+C:\Users\username>composer -V
+Composer version 1.0.0 2016-01-10 20:34:53
+```
+Now that you've installed Composer, you are ready to use it!
+
+1. Create your composer.json file to declare your dependencies.
+
+2. The composer.json file specifies required packages.
+
+3. Run composer install (on your local machine) to install the required packages and generate a composer.lock file.
+You can even add your own code to the autoloader by adding an autoload field to composer.json
+```
+{
+    "autoload": {
+        "psr-4": {"Ncc\\": "src/"}
+    }
+}
+```
+
+Composer will register a PSR-4 autoloader for the Ncc namespace.
+
+You define a mapping from namespaces to directories. The src directory would be in your project root, on the same level as vendor directory is. An example filename would be src/Foo.php containing an Ncc\Foo class.
