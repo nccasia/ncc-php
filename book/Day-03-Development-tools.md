@@ -1,6 +1,8 @@
 # **Development tools**
 
 1. [GIT](#1-git)
+    - [1.1 Basic commands](#11-basic-commands)
+    - [1.2 Basic Get flow](#12-basic-get-flow)
 2. [MySQL](#2-mysql)
 3. [Apache](#3-apache)
 4. [OpenServer](#4-openserver)
@@ -21,6 +23,30 @@ Git is essential to ensure there are no code conflicts between developers.
      - Just clone the source code from the repository or clone a modified version from the repository, 
      or a branch from the repository, and you can work anywhere.
      - Deployment your product easily.
+
+### 1.1 Basic commands
+
+This great GitHub commands cheat sheet saved my butt multiple times:
+<https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet>
+
+### 1.2 Basic Get flow
+Check out the branch from the develop branch
+
+Before checking out the branch you should pull the code back.
+
+    - git pull
+
+How to name the branch: id_task-description_task
+
+    - git checkout "id_task-description_task"
+    
+After completing the assigned task, commit with the following syntax:
+
+    - git commit -m "#id_task-description"
+    
+After committing, you push the code to the branch:
+
+    - git push origin name_branch
 
 - Some important Git terms:
 #####1. Branch
@@ -106,6 +132,8 @@ and works on most operating systems such as Linux, Windows, Unix and many other 
     - Step 3: Configure and use OpenServer.
     - To make it easier to visualize the installation process, you go to [Link cài đặt](https://freetuts.net/cai-dat-openserver-va-tao-domain-ao-tren-localhost-281.html)
     
+
+
 ##5. PhpStorm
 - Phpstorm is a cross-platform, integrated development environment (IDE) for PHP, 
 built by JetBrains, the world's leading software maker for programming and development tools.
@@ -114,6 +142,38 @@ built by JetBrains, the world's leading software maker for programming and devel
 error prevention, and automatic refactoring for PHP and JavaScript code.
 
 - By 2020, there are about 600,000 users using copyright PhpStorm software worldwide.
+
+**Configure PHPStorm interpreter:**
+
+1. In PHPStorm, go to "File" menu (Windows), then Settings (Ctrl+Alt+S).
+2.Go to "Languages & Frameworks", then click on "PHP".
+3. Click the **_..._** button from the "CLI Interpret" field.
+4. Add a new interpreter by clicking the + button.
+5. Here, provide the PHP Executable path to the php.exe we've spotted earlier:
+
+![Alt text](images/phpstorm.PNG)
+
+If done correctly, PHPStorm will display the PHP version & the path to the configuration file (php.ini)
+
+**Setup format code**
+
+Open up the PHPStorm IDE. Into the [ File ] -> [ Setting ] -> [ Editor ] -> [ Code Style ] -> [ PHP ]
+    
+    - Scheme: Default IDE
+    - Click set from …
+    
+![Alt text](images/format-code-phpstorm.PNG)
+
+![Alt text](images/Cau-Hinh-PSR-2-Cho-PHPStorm.png)
+
+PhpStorm can help ensure your code adheres to whichever coding standard you follow. 
+Press Ctrl+Alt+L on Windows/Linux to reformat the source code for the current selection or the entire file if nothing is selected.
+
+**Setup unit test**
+
+Open up the PHPStorm IDE. Into the [ File ] -> [ Setting ] -> [ Languages & Frameworks ] -> [ PHP ] -> [ Test Frameworks ]
+
+![Alt text](images/php-unit.PNG)
 
 **Install Phpstorm**
 - Please refer to the following link:
