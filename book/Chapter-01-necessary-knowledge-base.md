@@ -35,6 +35,27 @@ Below is an example of one of the simplest examples of an HTML document.
 HTML is tag language and uses different tags to format the content. These tags are contained within two parentheses <tag name>.
 Except for a few tags, most tags have their corresponding closing tags. For example, the tag `<html>` has a close tag of `</html>`, and the `<body>` tag has a corresponding close tag of `</body>`...
 	
+Think that if the website is a complete body, the HTML is the skeleton of that body.
+
+Website has two main types:
+
+- Static website - Is a website that does not communicate with the web server to send and receive data but only the data is pre-declared by HTML and the browser to read.
+- Dynamic website - A website that will communicate with a server to send and receive data, the data will be sent out to the user using HTML text and the browser will display it. 
+In order for a website to communicate with the web server, it will use some server-side programming languages such as PHP, ASP.NET, Ruby, .. to perform. For example, a website made of WordPress is a dynamic website.
+
+**Basic html tags need to know:**
+- HTML Headings
+- HTML Paragraphs
+- HTML Attributes
+- HTML Colors
+- HTML Links
+- HTML Images
+- HTML Tables
+- HTML Lists
+- HTML JavaScript
+- HTML Responsive Web Design
+- HTML Forms
+
 To learn more about the other tags and their meanings, you can find out at the following link:
 
 [https://www.w3schools.com/html](https://www.w3schools.com/html/)
@@ -95,9 +116,41 @@ Ways you can style an HTML element.
 3. Attribute value
 To the right of the property after the colon (:), we have the property value, which chooses one out of as many possible occurrences for a particular property (color has a lot of values ​​beyond red).
 
+**Basic CSS need to know:**
+- CSS Colors
+- CSS Backgrounds
+- CSS Borders
+- CSS Margins
+- CSS Padding
+- CSS Height and Width
+- CSS Dropdowns
+- CSS Forms
+- CSS Transitions
+- CSS Animation
+- CSS Buttons
+- CSS Pagination
+- CSS Responsive
+
 To learn more about other properties of CSS, learn more at the following link:
 
 [https://www.w3schools.com/css](https://www.w3schools.com/css/)
+
+To write CSS in a more professional, fast and coherent way, we will write css using **SASS or SCSS.**
+
+**The first concept to know is CSS Preprocessors.**
+
+CSS Preprocessors is a scripting language that extends CSS and is compiled into CSS syntax to help you write CSS faster and have a clearer structure.
+CSS Preprocessor can save you time writing CSS, easy maintenance and development of CSS.
+
+**Basic SASS / SCSS need to know:**
+- Sass Variables
+- Sass @import
+- Sass @mixin
+- Sass Functions
+
+To learn more about other properties of CSS, learn more at the following link:
+
+[https://www.w3schools.com/sass/](https://www.w3schools.com/sass/)
 
 ## 3. PHP Necessary Knowledge Base
 ### 3.1 What is PHP?
@@ -169,6 +222,17 @@ Japanese can also be used as variable names, but it shouldn't be
 
 Naming variables are not too strict but should be set so that it is clear, easy to understand, and true of the variable nature.
 
+**PHP Data Types**
+PHP supports the following data types:
+- String
+- Integer
+- Float (floating point numbers - also called double)
+- Boolean
+- Array
+- Object
+- NULL
+- Resource
+
 **Operators**
 
 Operators in PHP are symbols that can be used in calculations.
@@ -183,13 +247,12 @@ Operators in PHP are symbols that can be used in calculations.
 ?>
 ```
 
-**If statement / while statement**
-
+**PHP if...else...elseif Statements**
 The "if" snippet is often used to check if the next part has a true (TRUE) value, and will execute the internal code if the above condition is met.
 ```php
 <?php
     $condition = 3;
-    If ($condition === 3) {
+    if ($condition === 3) {
        echo “Conditions”;
     } else {
        echo “Unsatisfactory”;
@@ -228,6 +291,14 @@ When calling the function "sum" as follows, we get the sum of 2 numbers is 5 and
     echo sum(2, 3);
 ?>
 ```
+**Others Basic PHP need to know** 
+- PHP Forms: PHP Form Handling, PHP Form Validation, PHP Form Required ...
+- PHP Switch
+- PHP Loops
+- PHP Constants
+- PHP Numbers
+
+
 To learn more about PHP, you can refer to the following link:
 [https://www.w3schools.com/php](https://www.w3schools.com/php)
 
