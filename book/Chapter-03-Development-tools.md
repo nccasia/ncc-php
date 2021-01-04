@@ -132,7 +132,17 @@ and works on most operating systems such as Linux, Windows, Unix and many other 
     - Step 3: Configure and use OpenServer.
     - To make it easier to visualize the installation process, you go to [Link cài đặt](https://freetuts.net/cai-dat-openserver-va-tao-domain-ao-tren-localhost-281.html)
     
+- Config OpenServer
 
+![Alt text](images/openserver_three.PNG)
+
+![Alt text](images/openserver_four.PNG)
+
+- Then, click on the OpenServer icon under the setting toolbar, the screen below will appear:
+
+![Alt text](images/openserver_one.PNG)
+
+![Alt text](images/openserver_two.PNG)
 
 ##5. PhpStorm
 - Phpstorm is a cross-platform, integrated development environment (IDE) for PHP, 
