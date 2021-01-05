@@ -84,6 +84,7 @@ The design pattern system is divided into 3 groups: Creational (5 models), Struc
     Strategy
     Template method
     Visitor
+    Repository
     
 #**3. Creational Design Patterns**
 **Creational patterns provide various object creation mechanisms, which increase flexibility and reuse of existing code.**
