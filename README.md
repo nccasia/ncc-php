@@ -45,3 +45,5 @@ Other topics:
 [Chapter 08: SOLID principles](./book/Chapter-08-SOLID-principles.md)
 
 [Chapter 10: Docker, Github actions, working rules, tips and trick for a developer](./book/Chapter-10-Docker-Github-actions-Working-rules.md)
+
+[Chapter 11: NCC React Basic](https://nccasia.github.io/ncc-react-basic/)
