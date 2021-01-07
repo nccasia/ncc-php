@@ -175,3 +175,23 @@ You can even add your own code to the autoloader by adding an autoload field to 
 Composer will register a PSR-4 autoloader for the Ncc namespace.
 
 You define a mapping from namespaces to directories. The src directory would be in your project root, on the same level as vendor directory is. An example filename would be src/Foo.php containing an Ncc\Foo class.
+
+# PHPStan vs PHP CodeSniffer
+
+What is PHPStan? PHP Static Analysis Tool - discover bugs in your code without running it!. It focuses on finding errors in your code without actually running it. It catches whole classes of bugs even before you write tests for the code. It moves PHP closer to compiled languages in the sense that the correctness of each line of the code can be checked before you run the actual line.
+
+What is PHP CodeSniffer? A library that detects PHP, CSS and JS coding standard violations. It tokenizes PHP, JavaScript and CSS files and detects violations of a defined set of coding standards. It is an essential development tool that ensures your code remains clean and consistent.
+
+PHPStan and PHP CodeSniffer can be primarily classified as "Code Review" tools.
+
+Some of the features offered by PHPStan are:
+
+ - Static Analysis Tool
+ - Focuses on finding errors in your code without actually running it
+ - Extensible
+
+On the other hand, PHP CodeSniffer provides the following key features:
+
+ - Code Sniffing
+ - Coding Standard Checking
+ - Coding Standard Fixing
