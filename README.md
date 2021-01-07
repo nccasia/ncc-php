@@ -28,6 +28,8 @@ Other topics:
 6. How a browser works
 7. Authentication - Session, Cookies, JSON Web token
 8. NoSQL databases
+9. Realtime application
+10. Role and permission
     
 
 [Chapter 01: Necessary Knowledge Base](./book/Chapter-01-necessary-knowledge-base.md)  
@@ -44,6 +46,7 @@ Other topics:
 
 [Chapter 08: SOLID principles](./book/Chapter-08-SOLID-principles.md)
 
-[Chapter 10: Docker, Github actions, working rules, tips and trick for a developer](./book/Chapter-10-Docker-Github-actions-Working-rules.md)
+[Chapter 09: A small project on Laravel](./book/Chapter-09-A-small-project-on-Laravel.md)
 
+[Chapter 10: Docker, Github actions, working rules, tips and trick for a developer](./book/Chapter-10-Docker-Github-actions-Working-rules.md)
 [Chapter 11: NCC React Basic](https://nccasia.github.io/ncc-react-basic/)
