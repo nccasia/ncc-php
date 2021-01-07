@@ -195,3 +195,42 @@ On the other hand, PHP CodeSniffer provides the following key features:
  - Code Sniffing
  - Coding Standard Checking
  - Coding Standard Fixing
+ 
+ ## Setup & Run PHPStan - PHP Static Analysis Tool for Flowfact connector
+ 
+ **1. Make sure installed phpstan/phpstan in vendor by composer**
+ 
+ `composer require "phpstan/phpstan"`
+ 
+ **2. Make sure installed nunomaduro/larastan in vendor by composer**
+ 
+ `composer require "nunomaduro/larastan"`
+ 
+ Run it with level 5 and see result:
+ 
+ `vendor\bin\phpstan analyse . -c phpstan.neon`
+ 
+ phpstan.neon sample file
+ 
+ ```
+includes:
+    - ./vendor/nunomaduro/larastan/extension.neon
+
+parameters:
+    level: 5
+    paths:
+        - app
+
+    excludes_analyse:
+        - vendor
+        - storage
+        - tests
+
+    bootstrapFiles:
+
+    scanFiles:
+
+    ignoreErrors:
+```
+ 
+ Note: Errors from Framework
