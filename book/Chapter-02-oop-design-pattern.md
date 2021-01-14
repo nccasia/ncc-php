@@ -7,9 +7,8 @@
 It can be understood that OOP is a set of functions in a class and this class will be used to process data of a particular object or objects that share properties.
 
 Example:
-```php
-    class Person()
-    {
+```
+    class Person() {
         private $name;
         private $age;
     

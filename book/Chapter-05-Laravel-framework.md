@@ -81,3 +81,56 @@ modern PHP, unit testing, JavaScript, and more. Boost the skill level of yoursel
 
 **- artisan:** Laravel command executable file.
 
+##5. What is MVC pattern?
+
+MVC is an acronym which stands for 3 words Model - View - Controller. 
+Source code model into 3 parts, corresponding to each word. 
+Each word corresponds to a separate activity in a pattern.
+
+**Functions of each component in the MVC model:**
+
+**- Model (M):** The part that stores all of the application's data. 
+This part is a bridge between two components below is View and Controller.
+The model shown in the form is a database.
+It shows operations with the database such as retrieving and processing data.
+
+**- View (V):** This is the interface (theme) for the user. 
+It is responsible for displaying data and helping users interact with the system.
+
+**- Controller (C):** Controller is responsible for handling user requests through the view. 
+From there, Controller gives the data relevant to the user. 
+Besides, Controller also has the function to connect to the model.
+
+##6. Activity flow of MVC
+
+![Alt text](images/mvc.PNG)
+
+- After receiving a request from the browser, Controller will interact with the model to get data. 
+The model interacts with the database to get data, 
+the returned data is sent back to the Model, from the Model sent back to the Controller, 
+the Controller calls View to transfer the data just received from the Model to the View, 
+the View will render that data to the browser.
+
+##7. Example
+
+Here is an example taking all users for the user:
+
+**- Controller:**
+
+![Alt text](images/controller-user.PNG)
+
+**- Model:**
+
+![Alt text](images/model-user.PNG)
+
+**- View:**
+
+![Alt text](images/view-user.PNG)
+
+**- Database table users:**
+
+![Alt text](images/database.PNG)
+
+**- User Interface:**
+
+![Alt text](images/interface-user.PNG)
