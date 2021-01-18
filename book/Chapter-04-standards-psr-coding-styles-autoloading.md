@@ -196,7 +196,7 @@ On the other hand, PHP CodeSniffer provides the following key features:
  - Coding Standard Checking
  - Coding Standard Fixing
  
- ## Setup & Run PHPStan - PHP Static Analysis Tool for Flowfact connector
+ ## Setup & Run PHPStan - PHP Static Analysis Tool
  
  **1. Make sure installed phpstan/phpstan in vendor by composer**
  
@@ -234,3 +234,21 @@ parameters:
 ```
  
  Note: Errors from Framework
+ 
+## Setup & Run code sniffer for flowfact-connector
+ 
+ **1. Make sure installed code sniffer in vendor by composer**
+ 
+ `composer require "squizlabs/php_codesniffer=*"`
+ 
+ **2. Make sure installed PHPCompatibility code standard**
+ 
+ `composer require "phpcompatibility/php-compatibility"`
+ 
+ **3. Install php-compatibility into phpcs and used instead like code standard**
+ 
+ `vendor\bin\phpcs --config-set installed_paths vendor\phpcompatibility\php-compatibility`
+ 
+ **Run it with php version 7.4**
+ 
+ `vendor\bin\phpcs -p . --standard=PHPCompatibility --runtime-set testVersion 7.4 --ignore="vendor, storage, *.js,*.min.css"`

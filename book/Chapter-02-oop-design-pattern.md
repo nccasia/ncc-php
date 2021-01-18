@@ -130,3 +130,11 @@ The design pattern system is divided into 3 groups: Creational (5 models), Struc
 #####[9. Template method Behavioral Pattern](design-patterns/structural-patterns/09-template-method.md)
 #####[10. Visitor Behavioral Pattern](design-patterns/structural-patterns/10-visitor.md)
 
+# Some popular patterns:
+
+1. Builder - Factory
+2. Singleton
+3. Repository
+4. Decorator
+5. Observer
+6. Strategy

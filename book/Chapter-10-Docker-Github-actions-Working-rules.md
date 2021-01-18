@@ -21,6 +21,8 @@ https://developer.ibm.com/articles/os-php-7oohabits/
 
 https://www.slideshare.net/rdohms/object-calisthenicstek13
 
+https://github.com/alexeymezenin/laravel-best-practices
+
 ## Readability and maintainability: Is the code readable as written?  Does it require additional comments, better naming, or general refactoring to be easily understood?  Does the code generally conform to the style of coding for the project?
  - use code standard (PSR)
  - internal review before submitting
