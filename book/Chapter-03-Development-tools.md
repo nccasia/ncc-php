@@ -222,5 +222,12 @@ This tab shows the js files that the browser can load. At this tab, you can debu
 
 ngrok secure introspectable tunnels to localhost webhook development tool and debugging tool.
 
+run and publish a local website via ngrok
+
+check request logs
+
 ## 8. SSH connection and key generation
 
+learn how to generate a SSH key
+
+how to connect to a server via SSH
