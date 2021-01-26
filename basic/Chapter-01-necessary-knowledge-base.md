@@ -302,6 +302,8 @@ When calling the function "sum" as follows, we get the sum of 2 numbers is 5 and
 To learn more about PHP, you can refer to the following link:
 [https://www.w3schools.com/php](https://www.w3schools.com/php)
 
+## Magic methods, trait, reflection
+
 ## 4. Popular PHP Extensions
 ### 4.1 PHP Extensions là gì?
 
@@ -317,15 +319,5 @@ https://en.wikipedia.org/wiki/List_of_PHP_extensions
 - mcrypt
 - ...
 
-5. HTTP code response status code
-
-- 200 OK
-- 400 Bad Request
-- 401 Unauthorized (Similar to 403 Forbidden, but specifically for use when authentication is required and has failed or has not yet been provided)
-- 403 Forbidden (The request contained valid data and was understood by the server, but the server is refusing action.)
-- 404 Not Found (The requested resource could not be found but may be available in the future. Subsequent requests by the client are permissible.)
-- 405 Method Not Allowed
-- 500 Internal Server Error 
-- 
 
 
