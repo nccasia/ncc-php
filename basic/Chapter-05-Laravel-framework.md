@@ -81,3 +81,9 @@ modern PHP, unit testing, JavaScript, and more. Boost the skill level of yoursel
 
 **- artisan:** Laravel command executable file.
 
+## 5. Laravel Dusk
+
+Laravel Dusk provides an expressive, easy-to-use browser automation and testing API. By default, Dusk does not require you to install JDK or Selenium on your local computer. Instead, Dusk uses a standalone ChromeDriver installation.
+
+https://laravel.com/docs/8.x/dusk
+

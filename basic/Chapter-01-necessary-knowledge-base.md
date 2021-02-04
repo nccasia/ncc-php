@@ -12,6 +12,8 @@ Table of contents
 
 ---
 
+![Basic web service](images/basic_web_service.png?raw=true "Css")
+
 ## 1. Basic Html
 ### 1.1 What is Html?
 HTML stands for HyperText Markup Language (translated as HyperText Markup Language) used to create a web page.
