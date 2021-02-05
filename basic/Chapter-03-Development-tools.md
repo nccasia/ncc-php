@@ -1,15 +1,31 @@
 # **Development tools**
 
-1. [GIT](#1-git)
+- [**Development tools**](#development-tools)
+  - [1. GIT](#1-git)
     - [1.1 Basic commands](#11-basic-commands)
-    - [1.2 Basic Get flow](#12-basic-get-flow)
-2. [MySQL](#2-mysql)
-3. [Apache](#3-apache)
-4. [OpenServer](#4-openserver)
-5. [PhpStorm](#5-phpstorm)
-6. [Chrome dev tool](#6-chrome-dev-tool)
+    - [1.2 Basic Git flow](#12-basic-git-flow)
+      - [1. Branch](#1-branch)
+      - [2. Commit](#2-commit)
+      - [3. Checkout](#3-checkout)
+      - [4. Fetch](#4-fetch)
+      - [5. Head](#5-head)
+      - [6.  Index](#6--index)
+      - [7. Master](#7-master)
+      - [8. Merge](#8-merge)
+      - [9. Origin](#9-origin)
+      - [10. Pull](#10-pull)
+      - [11. Push](#11-push)
+      - [12. Rebase](#12-rebase)
+      - [13. Stash](#13-stash)
+  - [2. MySQL](#2-mysql)
+  - [3. Apache](#3-apache)
+  - [4. OpenServer](#4-openserver)
+  - [5. PhpStorm](#5-phpstorm)
+  - [6. Chrome dev tool](#6-chrome-dev-tool)
+  - [7. Ngrok service](#7-ngrok-service)
+  - [8. SSH connection and key generation](#8-ssh-connection-and-key-generation)
 
-##1. GIT
+## 1. GIT
 
 Git is a distributed version control system
 - Git stores information in the form of a list of file-based changes and changes made to each file over time.
@@ -18,18 +34,18 @@ Git is a distributed version control system
 Git is essential to ensure there are no code conflicts between developers.
 
 - Some of the benefits of Git:
-     - Easy to use, fast, quick and safe operation.
-     - Easily combine branches.
-     - Just clone the source code from the repository or clone a modified version from the repository, 
-     or a branch from the repository, and you can work anywhere.
-     - Deployment your product easily.
+   - Easy to use, fast, quick and safe operation.
+   - Easily combine branches.
+   - Just clone the source code from the repository or clone a modified version from the repository, 
+   or a branch from the repository, and you can work anywhere.
+   - Deployment your product easily.
 
 ### 1.1 Basic commands
 
 This great GitHub commands cheat sheet saved my butt multiple times:
 <https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet>
 
-### 1.2 Basic Get flow
+### 1.2 Basic Git flow
 Check out the branch from the develop branch
 
 Before checking out the branch you should pull the code back.
@@ -48,54 +64,59 @@ After committing, you push the code to the branch:
 
     - git push origin name_branch
 
+
+![Basic git flow](images/basic_git_flow.jpg?raw=true "Css")
+
 - Some important Git terms:
-#####1. Branch
+#### 1. Branch
 - Branches represent specific instances of a repository separate from your main Project.
 - Branch allows you to keep track of your changes to the repository, so you can roll back to earlier versions.
 
-#####2. Commit
+#### 2. Commit
 - Commit represents a specific moment in your project history. Using the commit and git add commands keeps your changes saved to local repository.
 
-#####3. Checkout
+#### 3. Checkout
 - Use **git checkout** to switch between branches
     - git checkout "name-branch"
  
-#####4. Fetch
+#### 4. Fetch
 - The git fetch command fetches the copies and downloads all branches to your computer.
 
-#####5. Head
+#### 5. Head
 - Commits at the beginning of a branch are called Head. 
 It represents the most recent commit of the repository you are working on.
 
-#####6.  Index
+#### 6.  Index
 - Whenever you add, edit, delete, or change a file, it stays in the index until you're ready to commit.
   Use git status to see those changes (file index).
 
-#####7. Master
+#### 7. Master
 - Master is the main branch of your repository. It includes the most recent changes and commits.
 
-#####8. Merge
+#### 8. Merge
 - The git merge command combines pull requests to add changes from branch to branch.
 
-#####9. Origin
+#### 9. Origin
 - git push origin master => to push local changes to the main branch.
 
-#####10. Pull
+#### 10. Pull
 - To pull all of the pushed code back to your branch
     - git pull
 
-#####11. Push
+#### 11. Push
 - The git push command is used to push the code to your branch.
 
-#####12. Rebase
+#### 12. Rebase
 - The git rebase command allows you to split, move, and exit a commit. It can also be used to combine two branches.
 
-#####13. Stash
+#### 13. Stash
 - Lệnh git stash để lưu lại các công việc mình đang làm việc trên branch hiện tại, 
 dùng git stash apply để quay trở lại thời điểm chưa git stash.  
 
 
-##2. MySQL
+![Basic git commands](images/git_commands.jpg?raw=true "Css")
+
+## 2. MySQL
 - MySql is an open source database administration system.
 - Some free tools to use as MySql:
     - MySql Workbench (Mac, Windows, Linux), free, open source.
@@ -108,7 +129,7 @@ dùng git stash apply để quay trở lại thời điểm chưa git stash.
     - The client sends the SQL request with a special command on MySql.
     - The application on the server will respond to the information and return the results on the client machine.
     
-##3. Apache
+## 3. Apache
 - Apache (Apache HTTP Server) is a server program that communicates using the HTTP protocol 
 and works on most operating systems such as Linux, Windows, Unix and many other operating systems.
 
@@ -121,7 +142,7 @@ and works on most operating systems such as Linux, Windows, Unix and many other 
     when the message "** It works! **" pops up or if you go to http: // localhost, 
     check the line "* * It works! ** "then you have installed it successfully.
 
-##4. OpenServer
+## 4. OpenServer
 - OpenServer is a software for creating webserver on windows from Russia, and there are many good utilities built in.
 - OpenServer provides users with a variety of platforms to test their products and run well in all environments.
 - OpenServer has built-in environment variables within it when working with Laravel.
@@ -134,7 +155,7 @@ and works on most operating systems such as Linux, Windows, Unix and many other 
     
 
 
-##5. PhpStorm
+## 5. PhpStorm
 - Phpstorm is a cross-platform, integrated development environment (IDE) for PHP, 
 built by JetBrains, the world's leading software maker for programming and development tools.
 
@@ -179,10 +200,8 @@ Open up the PHPStorm IDE. Into the [ File ] -> [ Setting ] -> [ Languages & Fram
 - Please refer to the following link:
 [link download and setup phpstorm](https://khophanmem24h.com/download-phpstorm-2019/)
 
-##6. Chrome dev tool
-The Chrome Developer Tool is a suite of tools that are hugely supportive for developers built into Google Chrome. 
-DevTools provides web developers with internal access to their browsers and web applications. 
-Use DevTools to efficiently edit HTML, CSS, and JavaScript and get insights to optimize code.
+## 6. Chrome dev tool
+The Chrome Developer Tool is a suite of tools that are hugely supportive for developers built into Google Chrome. DevTools provides web developers with internal access to their browsers and web applications. Use DevTools to efficiently edit HTML, CSS, and JavaScript and get insights to optimize code.
 
 **Elements**
 

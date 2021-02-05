@@ -6,13 +6,16 @@ In this section we will learn how to code according to the standards recommended
 
 Table of contents
 
-- [Standards PSR, Coding styles, Auto Loading](#standards-psr-coding-styles-auto-loading)
+- [Chapter 04: Standards PSR, Coding styles, Auto Loading](#chapter-04-standards-psr-coding-styles-auto-loading)
   - [1. PSR-0: Auto loading Standard](#1-psr-0-auto-loading-standard)
   - [2. PSR-1: Basic Coding Standard](#2-psr-1-basic-coding-standard)
   - [3. PSR-2: Coding Style Guide](#3-psr-2-coding-style-guide)
   - [4. PSR-4: Autoloader](#4-psr-4-autoloader)
 - [How to setup style configuration on PhpStorm](#how-to-setup-style-configuration-on-phpstorm)
 - [Composer](#composer)
+- [PHPStan vs PHP CodeSniffer](#phpstan-vs-php-codesniffer)
+  - [Setup & Run PHPStan - PHP Static Analysis Tool](#setup--run-phpstan---php-static-analysis-tool)
+  - [Setup & Run code sniffer](#setup--run-code-sniffer)
 
 ---
 
@@ -235,7 +238,7 @@ parameters:
  
  Note: Errors from Framework
  
-## Setup & Run code sniffer for flowfact-connector
+## Setup & Run code sniffer
  
  **1. Make sure installed code sniffer in vendor by composer**
  

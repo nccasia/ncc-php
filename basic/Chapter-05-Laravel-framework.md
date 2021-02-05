@@ -1,17 +1,19 @@
 # **Laravel framework**
 
-1. [About Laravel](#1-about-laravel)
-2. [Learning Laravel](#2-learning-laravel)
-3. [Install laravel](#3-install-laravel)
-4. [The structure of Laravel](#4-the-structure-of-laravel)
+- [**Laravel framework**](#laravel-framework)
+  - [1. About Laravel](#1-about-laravel)
+  - [2. Learning Laravel](#2-learning-laravel)
+  - [3. Install laravel](#3-install-laravel)
+  - [4. The structure of Laravel](#4-the-structure-of-laravel)
+  - [5. Laravel Dusk](#5-laravel-dusk)
 
-##1. About Laravel
+## 1. About Laravel
 
 Laravel is a free and open source PHP Framework, developed by Taylor Otwell 
 and targeted to support the development of web applications in a model-view-controller (MVC) architecture.
 Laravel includes an easy-to-understand syntax, Many different utilities support deployment into application maintenance.
 
-##2. Learning Laravel
+## 2. Learning Laravel
 
 Laravel has the most extensive and thorough documentation and video tutorial library of any modern web application framework. 
 The [Laravel documentation](https://laravel.com/docs/8.x) is in-depth and complete, making it a breeze to get started learning the framework.
@@ -19,11 +21,11 @@ The [Laravel documentation](https://laravel.com/docs/8.x) is in-depth and comple
 If you're not in the mood to read, [Laracasts](https://laracasts.com/) contains over 1100 video tutorials covering a range of topics including Laravel, 
 modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
 
-##3. Install laravel
+## 3. Install laravel
 
 - [Laravel install](https://laravel.com/docs/8.x/installation)
 
-##4. The structure of Laravel
+## 4. The structure of Laravel
 
 - **app:** Contains directories, php files, libraries, models.
 

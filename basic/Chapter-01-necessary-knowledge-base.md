@@ -9,10 +9,9 @@ Table of contents
 2. [Css](#2-css)
 3. [PHP Necessary Knowledge Base](#3-php-necessary-knowledge-base)
 4. [Popular PHP Extensions](#4-popular-php-extensions)
+5. [Web server](#5-web-server)
 
 ---
-
-![Basic web service](images/basic_web_service.png?raw=true "Css")
 
 ## 1. Basic Html
 ### 1.1 What is Html?
@@ -310,11 +309,10 @@ To learn more about PHP, you can refer to the following link:
 ### 4.1 PHP Extensions là gì?
 
 PHP runs on Zend Engine platform. Zend Engine takes care of interpreting PHP code into machine code and executing it.
-All resource management of PHP is handled by Zend Engine.
-Zend Engine itself provides a number of libraries available so that PHP can run directly without an external library, but most of those libraries are Text processing libraries. The other PHP libraries are written in the form of extensions, these libraries mainly work with PHP through the Zend Engine. Some of PHP's I / O processing is through external libraries, not core support: for example, DB connection, working with HTTP, image processing ...
 
-Here are the basic PHP extensions and research documentation:
-https://en.wikipedia.org/wiki/List_of_PHP_extensions
+Zend Engine itself provides a number of libraries available so that PHP can run directly without an external library, but most of those libraries are Text processing libraries. The other PHP libraries are written in the form of extensions, these libraries mainly work with PHP through the Zend Engine. Some of PHP's I/O processing is through external libraries, not core support: for example, DB connection, working with HTTP, image processing ...
+
+Here are the popular PHP extensions that often required in your future work:
 
 - bcMath
 - cURL
@@ -322,4 +320,20 @@ https://en.wikipedia.org/wiki/List_of_PHP_extensions
 - ...
 
 
+## 5. Web service
+
+Here are some basic components of a web service
+
+![Basic web service](images/basic_web_service.png?raw=true "Css")
+
+When you download a web browser, you get HTML, CSS, and JavaScript, but you do not get PHP. PHP scripts—which you’ll soon be writing—have to be interpreted by the PHP interpreter program, called php. And, you can’t just add a PHP interpreter to your browser. It doesn’t know what to do with scripts and isn’t built to interpret PHP.
+
+Instead, you need PHP on a web server. It’s the web server — not the web browser — that can interact with a PHP interpreter. Your browser can handle HTML on its own, but it has to make a request to a web server to deal with PHP scripts. That server can take your PHP scripts and run them, and then take the response and send it back to your browser. Your browser can then understand and handle the response.
+
+![PHP and HTML](images/php_html.png?raw=true "Css")
+
+Here’s the basic process:
+1. A web browser makes a request for some page. That page might be a URL on a remote web server, or a local file on your computer.
+2. The web server returns HTML (and CSS and JavaScript) or, in the case of PHP, passes the PHP request on to the PHP interpreter.
+3. The PHP interpreter interprets, or runs, the PHP. The result of that should be something that a browser can understand, like HTML, JSON string. It passes this result, or response, back to the web server and later the web browser.
 
