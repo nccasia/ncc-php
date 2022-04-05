@@ -24,8 +24,8 @@
 1. Debugging
 2. Basic Linux commands, Cron jobs
 3. SQL Databases: Design, Queries, Indexes
-4. 
-5. Securities
+4. DDD - domain driven design
+5. Web Securities
 6. How a browser works
 7. Authentication - Session, Cookies, JSON Web token
 8. NoSQL databases
