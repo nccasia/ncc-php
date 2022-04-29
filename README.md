@@ -17,7 +17,7 @@
 7. [Chapter 07: API Restful](./basic/Chapter-07-API-RESTful.md)
 8. [Chapter 08: SOLID principles](./basic/Chapter-08-SOLID-principles.md)
 9. [Chapter 09: A small project on Laravel](./basic/Chapter-09-A-small-project-on-Laravel.md)
-10. [Chapter 10: Docker, Github actions, working rules, tips and trick for a developer](book/Chapter-10-CI-CD-Working-rules.md) 
+10. [Chapter 10: Docker, Github actions, working rules, tips and trick for a developer](./basic/Chapter-10-CI-CD-Working-rules.md) 
 
 ## Other topics:
 
