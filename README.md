@@ -39,3 +39,22 @@
 2. https://github.com/php-school/learn-you-php
 3. https://phptherightway.com/
 4. https://github.com/marcelgsantos/learning-oop-in-php
+
+
+##The new process (quan.nguyenminh)
+#Base
+1. Base HTML+CSS, base web app, base php
+2. Base GIT + php Storm + mysql
+3. Restful API + Postman
+4. Base Laravel + OpenServer + Composer
+5. Unit test
+6. Base OOP + Coding principles (KISS, DRY, SOLID)
+7. Latest Coding styles of PHP
+8. Dev tools (Chrome dev tool, ngrok, phpmyadmin/workbench/sql manager)
+
+#Additional
+1. SCSS/SASS, webpack
+2. Common library (passport, predis, maatwebsite, telescope...)
+3. Docker
+4. Design pattern, DDD (when add to project)
+5. Another knowledge (task management tool, scrum, working rules, QA)

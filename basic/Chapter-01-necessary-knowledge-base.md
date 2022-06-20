@@ -9,7 +9,7 @@ Table of contents
 2. [Css](#2-css)
 3. [PHP Necessary Knowledge Base](#3-php-necessary-knowledge-base)
 4. [Popular PHP Extensions](#4-popular-php-extensions)
-5. [Web server](#5-web-server)
+5. [Web service](#5-web-service)
 
 ---
 
@@ -17,6 +17,15 @@ Table of contents
 ### 1.1 What is Html?
 HTML stands for HyperText Markup Language (translated as HyperText Markup Language) used to create a web page.
 A website can contain many pages and each page is referred to as an HTML document.
+Think that if the website is a complete body, the HTML is the skeleton of that body.
+
+**More information**
+
+Website has two main types:
+- Static web (website/web tĩnh) - Là trang web chỉ bao gồm HTML có sẵn, do trình duyệt tải về từ máy chủ và hiển thị cho người dùng. Website không cho phép người dùng tương tác với nó.
+- Dynamic website (web app) - Một trang web sẽ giao tiếp với máy chủ để gửi và nhận dữ liệu, dữ liệu sẽ được gửi đến dưới dạng văn bản HTML và trình duyệt sẽ hiển thị nó.
+Để một trang web có thể giao tiếp với máy chủ web, nó sẽ sử dụng một số ngôn ngữ lập trình phía máy chủ như PHP, ASP.NET, Ruby,… để thực hiện. Ví dụ, một trang web làm bằng WordPress là một trang web động.
+
 ### 1.2 Html Syntax Structure
 Below is an example of one of the simplest examples of an HTML document.
 ```html
@@ -31,18 +40,10 @@ Below is an example of one of the simplest examples of an HTML document.
 </body>
 </html>
 ```
-**Tags in HTML - Tags in HTML**
+### 1.3 Tags in HTML
 
 HTML is tag language and uses different tags to format the content. These tags are contained within two parentheses <tag name>.
 Except for a few tags, most tags have their corresponding closing tags. For example, the tag `<html>` has a close tag of `</html>`, and the `<body>` tag has a corresponding close tag of `</body>`...
-	
-Think that if the website is a complete body, the HTML is the skeleton of that body.
-
-Website has two main types:
-
-- Static website - Is a website that does not communicate with the web server to send and receive data but only the data is pre-declared by HTML and the browser to read.
-- Dynamic website - A website that will communicate with a server to send and receive data, the data will be sent out to the user using HTML text and the browser will display it. 
-In order for a website to communicate with the web server, it will use some server-side programming languages such as PHP, ASP.NET, Ruby, .. to perform. For example, a website made of WordPress is a dynamic website.
 
 **Basic html tags need to know:**
 - HTML Headings
@@ -76,7 +77,7 @@ body {
 
 The above Css will define all the html elements in the body tag, the background image will be black and the text is white.
 
-**Embed CSS in HTML**
+### 2.3 How to embed CSS in HTML
 
 **Inline: CSS code written in the style attribute of the HTML element**
 ```html
@@ -84,11 +85,11 @@ The above Css will define all the html elements in the body tag, the background 
 ```
 **Internal: the CSS code in the HTML document itself, inside the tag block `<style>`**
 ```html
-<html>
-   <head> 
-      <link rel="stylesheet" href="demo.css">
-   </head>
-</html>
+<style>
+    h1 {
+        color: #000;
+    }   
+</style>
 ```
 **External: CSS code in a separate file then loaded into HTML with the element `<link>`**
 ```html
@@ -102,7 +103,7 @@ The above Css will define all the html elements in the body tag, the background 
 </html>
 
 ```
-**Css specific syntax**
+### 2.4 Css specific syntax
 
 ![Alt text](images/css-declaration-small.png?raw=true "Css")
 1. Selector
@@ -136,23 +137,6 @@ To learn more about other properties of CSS, learn more at the following link:
 
 [https://www.w3schools.com/css](https://www.w3schools.com/css/)
 
-To write CSS in a more professional, fast and coherent way, we will write css using **SASS or SCSS.**
-
-**The first concept to know is CSS Preprocessors.**
-
-CSS Preprocessors is a scripting language that extends CSS and is compiled into CSS syntax to help you write CSS faster and have a clearer structure.
-CSS Preprocessor can save you time writing CSS, easy maintenance and development of CSS.
-
-**Basic SASS / SCSS need to know:**
-- Sass Variables
-- Sass @import
-- Sass @mixin
-- Sass Functions
-
-To learn more about other properties of CSS, learn more at the following link:
-
-[https://www.w3schools.com/sass/](https://www.w3schools.com/sass/)
-
 ## 3. PHP Necessary Knowledge Base
 ### 3.1 What is PHP?
 PHP (Personal Home Page) is an open source scripting language commonly used to create web applications running on servers. PHP code can be embedded in an HTML page using the PHP <? Php?> Tag pair.
@@ -173,13 +157,17 @@ PHP (Personal Home Page) is an open source scripting language commonly used to c
 1. The extension to be used is .php
 2. PHP code is placed in the snippet `<? Php?>`
 3. Place a semicolon at the end of each line of code
+4. Run file: php file-name.php
 
-```html
-<?php
-echo ‘Hello World’;
-# This is comment
-?>
+test.php
 ```
+<?php
+echo 'Hello world';
+```
+Run file in terminal and result
+
+![Basic web service](images/run-file-php.png?raw=true)
+
 **How to comment code**
 
 Comment lines are comments to aid in reading and understanding code.
