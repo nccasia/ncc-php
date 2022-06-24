@@ -43,18 +43,23 @@
 
 ##The new process (quan.nguyenminh)
 #Base
-1. Base HTML+CSS, base web app, base php
-2. Base GIT + php Storm + mysql
-3. Restful API + Postman
-4. Base Laravel + OpenServer + Composer
-5. Unit test
-6. Base OOP + Coding principles (KISS, DRY, SOLID)
-7. Latest Coding styles of PHP
-8. Dev tools (Chrome dev tool, ngrok, phpmyadmin/workbench/sql manager)
+1. Base HTML+CSS, base web app (1 day)
+2. Base php + oop + mysql (2 days)
+3. Base GIT + php Storm (1 day)
+4. Restful API + Postman (2 days)
+5. Base Laravel + Composer + OpenServer (5 days)
+6. Service + Repository layer (2 days)
+7. Unit test (1 day)
+8. Coding principles (KISS, DRY, SOLID) (1 day)
+9. Latest Coding styles of PHP (1 day)
+10. Dev tools (Chrome dev tool, ngrok, phpmyadmin/workbench/sql manager) (1 day)
+11. project (5 days)
+
+Total: 22 days (~ 1 month)
 
 #Additional
 1. SCSS/SASS, webpack
 2. Common library (passport, predis, maatwebsite, telescope...)
-3. Docker
-4. Design pattern, DDD (when add to project)
-5. Another knowledge (task management tool, scrum, working rules, QA)
+3. Docker + linux
+4. Design pattern (simple), DDD (when add to project)
+5. Another knowledge (task management tool, scrum, working rules, QA...)
