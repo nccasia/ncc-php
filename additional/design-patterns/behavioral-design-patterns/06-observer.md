@@ -16,7 +16,7 @@ An Abstract Factory Pattern includes the following basic components:
 
 6. The Client creates publisher and subscriber objects separately and then registers subscribers for publisher updates.
   
-![Alt text](../../images/design-patterns/behavioral-design-patterns/observer-structure.png?raw=true "Abstract Factory Pattern Structure")
+![Alt text](../../../basic/images/design-patterns/behavioral-design-patterns/observer-structure.png?raw=true "Abstract Factory Pattern Structure")
 
 Example:
 ```php

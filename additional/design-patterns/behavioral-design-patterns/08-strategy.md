@@ -14,7 +14,7 @@ An Abstract Factory Pattern includes the following basic components:
 
 5. The Client creates a specific strategy object and passes it to the context. The context exposes a setter which lets clients replace the strategy associated with the context at runtime.
   
-![Alt text](../../images/design-patterns/behavioral-design-patterns/strategy-structure.png?raw=true "Abstract Factory Pattern Structure")
+![Alt text](../../../basic/images/design-patterns/behavioral-design-patterns/strategy-structure.png?raw=true "Abstract Factory Pattern Structure")
 
 Example:
 ```php

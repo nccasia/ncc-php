@@ -14,7 +14,7 @@ An Abstract Factory Pattern includes the following basic components:
 
 4. Both context and concrete states can set the next state of the context and perform the actual state transition by replacing the state object linked to the context.
   
-![Alt text](../../images/design-patterns/behavioral-design-patterns/state-structure.png?raw=true "Abstract Factory Pattern Structure")
+![Alt text](../../../basic/images/design-patterns/behavioral-design-patterns/state-structure.png?raw=true "Abstract Factory Pattern Structure")
 
 Example:
 ```php

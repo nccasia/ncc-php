@@ -10,7 +10,7 @@ An Abstract Factory Pattern includes the following basic components:
 - Concrete Decorators define extra behaviors that can be added to components dynamically. Concrete decorators override methods of the base decorator and execute their behavior either before or after calling the parent method.
 - The Client can wrap components in multiple layers of decorators, as long as it works with all objects via the component interface.
 
-![Alt text](../../images/design-patterns/structural-patterns/decorator-structure.png?raw=true "Abstract Factory Pattern Structure")
+![Alt text](../../../basic/images/design-patterns/structural-patterns/decorator-structure.png?raw=true "Abstract Factory Pattern Structure")
 
 Example:
 ```php

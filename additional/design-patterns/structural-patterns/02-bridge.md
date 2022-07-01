@@ -11,7 +11,7 @@ An Abstract Factory Pattern includes the following basic components:
 - Refined Abstractions provide variants of control logic. Like their parent, they work with different implementations via the general implementation interface.
 - Usually, the Client is only interested in working with the abstraction. However, it’s the client’s job to link the abstraction object with one of the implementation objects..
 
-![Alt text](../../images/design-patterns/structural-patterns/bridge-structure.png?raw=true "Abstract Factory Pattern Structure")
+![Alt text](../../../basic/images/design-patterns/structural-patterns/bridge-structure.png?raw=true "Abstract Factory Pattern Structure")
 
 Example:
 ```php

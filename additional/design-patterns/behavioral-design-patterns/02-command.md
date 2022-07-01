@@ -11,7 +11,7 @@ An Abstract Factory Pattern includes the following basic components:
 - The Receiver class contains some business logic. Almost any object may act as a receiver. Most commands only handle the details of how a request is passed to the receiver, while the receiver itself does the actual work.
 - The Client creates and configures concrete command objects. The client must pass all of the request parameters, including a receiver instance, into the command’s constructor. After that, the resulting command may be associated with one or multiple senders.
 
-![Alt text](../../images/design-patterns/behavioral-design-patterns/command-structure.png?raw=true "Abstract Factory Pattern Structure")
+![Alt text](../../../basic/images/design-patterns/behavioral-design-patterns/command-structure.png?raw=true "Abstract Factory Pattern Structure")
 
 Example:
 ```php

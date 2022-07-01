@@ -11,7 +11,7 @@ An Abstract Factory Pattern includes the following basic components:
   Upon receiving a request, a container delegates the work to its sub-elements, processes intermediate results and then returns the final result to the client.
 - The Client works with all elements through the component interface. As a result, the client can work in the same way with both simple or complex elements of the tree.
 
-![Alt text](../../images/design-patterns/structural-patterns/composite-structure.png?raw=true "Abstract Factory Pattern Structure")
+![Alt text](../../../basic/images/design-patterns/structural-patterns/composite-structure.png?raw=true "Abstract Factory Pattern Structure")
 
 Example:
 ```php

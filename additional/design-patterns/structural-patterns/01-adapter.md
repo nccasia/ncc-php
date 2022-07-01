@@ -10,12 +10,12 @@ An Abstract Factory Pattern includes the following basic components:
     - The Adapter is a class that’s able to work with both the client and the service: it implements the client interface, while wrapping the service object. The adapter receives calls from the client via the adapter interface and translates them into calls to the wrapped service object in a format it can understand.
     - The client code doesn’t get coupled to the concrete adapter class as long as it works with the adapter via the client interface. Thanks to this, you can introduce new types of adapters into the program without breaking the existing client code. This can be useful when the interface of the service class gets changed or replaced: you can just create a new adapter class without changing the client code.
     
-    ![Alt text](../../images/design-patterns/structural-patterns/structure-object-adapter.png?raw=true "Adapter Pattern Structure")
+    ![Alt text](../../../basic/images/design-patterns/structural-patterns/structure-object-adapter.png?raw=true "Adapter Pattern Structure")
 
 - **Class adapter**: This implementation uses inheritance: the adapter inherits interfaces from both objects at the same time. Note that this approach can only be implemented in programming languages that support multiple inheritance, such as C++.
     - The Class Adapter doesn’t need to wrap any objects because it inherits behaviors from both the client and the service. The adaptation happens within the overridden methods. The resulting adapter can be used in place of an existing client class.
     
-    ![Alt text](../../images/design-patterns/structural-patterns/structure-class-adapter.png?raw=true "Adapter Pattern Structure")
+    ![Alt text](../../../basic/images/design-patterns/structural-patterns/structure-class-adapter.png?raw=true "Adapter Pattern Structure")
 
 
 

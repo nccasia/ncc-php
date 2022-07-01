@@ -10,7 +10,7 @@ An Abstract Factory Pattern includes the following basic components:
   Usually, proxies manage the full lifecycle of their service objects.
 - The Client should work with both services and proxies via the same interface. This way you can pass a proxy into any code that expects a service object.
 
-![Alt text](../../images/design-patterns/structural-patterns/proxy-structure.png?raw=true "Abstract Factory Pattern Structure")
+![Alt text](../../../basic/images/design-patterns/structural-patterns/proxy-structure.png?raw=true "Abstract Factory Pattern Structure")
 
 Example:
 ```php
