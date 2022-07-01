@@ -11,7 +11,7 @@ An Abstract Factory Pattern includes the following basic components:
 - The Client calculates or stores the extrinsic state of flyweights. From the client’s perspective, a flyweight is a template object which can be configured at runtime by passing some contextual data into parameters of its methods.
 - The Flyweight Factory manages a pool of existing flyweights. With the factory, clients don’t create flyweights directly. Instead, they call the factory, passing it bits of the intrinsic state of the desired flyweight. The factory looks over previously created flyweights and either returns an existing one that matches search criteria or creates a new one if nothing is found.
 
-![Alt text](../../../basic/images/design-patterns/structural-patterns/flyweight-structure.png?raw=true "Abstract Factory Pattern Structure")
+![Alt text](../../images/design-patterns/structural-patterns/flyweight-structure.png?raw=true "Abstract Factory Pattern Structure")
 
 Example:
 ```php

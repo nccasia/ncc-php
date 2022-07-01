@@ -14,7 +14,7 @@ An Abstract Factory Pattern includes the following basic components:
 
 5. The Client usually represents a collection or some other complex object (for example, a Composite tree). Usually, clients aren’t aware of all the concrete element classes because they work with objects from that collection via some abstract interface.
   
-![Alt text](../../../basic/images/design-patterns/behavioral-design-patterns/visitor-structure.png?raw=true "Abstract Factory Pattern Structure")
+![Alt text](../../images/design-patterns/behavioral-design-patterns/visitor-structure.png?raw=true "Abstract Factory Pattern Structure")
 
 Example:
 ```php

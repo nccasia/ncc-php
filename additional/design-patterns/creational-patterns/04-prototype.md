@@ -5,7 +5,7 @@
 - ConcretePrototype: The Concrete Prototype class implements the cloning method. In addition to copying the original object’s data to the clone, this method may also handle some edge cases of the cloning process related to cloning linked objects, untangling recursive dependencies, etc.
 - Client: The Client can produce a copy of any object that follows the prototype interface.
 
-![Alt text](../../../basic/images/design-patterns/creational-patterns/prototype-structure.png?raw=true "Prototype Pattern Structure")
+![Alt text](../../images/design-patterns/creational-patterns/prototype-structure.png?raw=true "Prototype Pattern Structure")
 
 Example:
 

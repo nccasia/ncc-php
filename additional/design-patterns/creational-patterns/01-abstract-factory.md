@@ -10,7 +10,7 @@ An Abstract Factory Pattern includes the following basic components:
 - Product: Implementation of specific objects, implementation of methods are specified in AbstractProduct.
 - Client: The objects that use AbstractFactory and AbstractProduct.
 
-![Alt text](../../../basic/images/design-patterns/creational-patterns/abstract-factory-structure.png?raw=true "Abstract Factory Pattern Structure")
+![Alt text](../../images/design-patterns/creational-patterns/abstract-factory-structure.png?raw=true "Abstract Factory Pattern Structure")
 
 Example:
 ```php

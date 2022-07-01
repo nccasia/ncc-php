@@ -6,7 +6,7 @@
 - ConcreteBuilder : Inherit Builder and install detailed how the object is created. It identifies and holds the instances it creates, and it also provides a method to return the instances it created earlier..
 - Director/ Client: Where is the place that will call the Builder to create the object.
 
-![Alt text](../../../basic/images/design-patterns/creational-patterns/factory-method-structure.png?raw=true "Abstract Factory Pattern Structure")
+![Alt text](../../images/design-patterns/creational-patterns/factory-method-structure.png?raw=true "Abstract Factory Pattern Structure")
 
 Example:
 

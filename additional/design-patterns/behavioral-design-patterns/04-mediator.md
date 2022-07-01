@@ -12,7 +12,7 @@ An Abstract Factory Pattern includes the following basic components:
 
 - Components must not be aware of other components. If something important happens within or to a component, it must only notify the mediator. When the mediator receives the notification, it can easily identify the sender, which might be just enough to decide what component should be triggered in return. From a component’s perspective, it all looks like a total black box. The sender doesn’t know who’ll end up handling its request, and the receiver doesn’t know who sent the request in the first place.
   
-![Alt text](../../../basic/images/design-patterns/behavioral-design-patterns/mediator-structure.png?raw=true "Abstract Factory Pattern Structure")
+![Alt text](../../images/design-patterns/behavioral-design-patterns/mediator-structure.png?raw=true "Abstract Factory Pattern Structure")
 
 Example:
 ```php

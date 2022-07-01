@@ -8,7 +8,7 @@ An Abstract Factory Pattern includes the following basic components:
 
 2. Concrete Classes can override all of the steps, but not the template method itself.
   
-![Alt text](../../../basic/images/design-patterns/behavioral-design-patterns/template-method-structure.png?raw=true "Abstract Factory Pattern Structure")
+![Alt text](../../images/design-patterns/behavioral-design-patterns/template-method-structure.png?raw=true "Abstract Factory Pattern Structure")
 
 Example:
 ```php

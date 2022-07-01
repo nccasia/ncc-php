@@ -11,7 +11,7 @@ An Abstract Factory Pattern includes the following basic components:
   Handlers are usually self-contained and immutable, accepting all necessary data just once via the constructor.
 - The Client may compose chains just once or compose them dynamically, depending on the application’s logic. Note that a request can be sent to any handler in the chain—it doesn’t have to be the first one.
 
-![Alt text](../../../basic/images/design-patterns/behavioral-design-patterns/chain-of-responsibility-structure.png?raw=true "Abstract Factory Pattern Structure")
+![Alt text](../../images/design-patterns/behavioral-design-patterns/chain-of-responsibility-structure.png?raw=true "Abstract Factory Pattern Structure")
 
 Example:
 ```php

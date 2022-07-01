@@ -9,7 +9,7 @@
 
 - Director/ Client: Where is the place that will call the Builder to create the object.
 
-![Alt text](../../../basic/images/design-patterns/creational-patterns/abstract-factory-structure.png?raw=true "Abstract Factory Pattern Structure")
+![Alt text](../../images/design-patterns/creational-patterns/abstract-factory-structure.png?raw=true "Abstract Factory Pattern Structure")
 
 Example:
 

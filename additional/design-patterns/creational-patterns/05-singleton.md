@@ -5,7 +5,7 @@
   
   The Singleton’s constructor should be hidden from the client code. Calling the getInstance method should be the only way of getting the Singleton object.
 
-![Alt text](../../../basic/images/design-patterns/creational-patterns/singleton-structure.png?raw=true "Prototype Pattern Structure")
+![Alt text](../../images/design-patterns/creational-patterns/singleton-structure.png?raw=true "Prototype Pattern Structure")
 
 Example:
 

@@ -14,18 +14,18 @@ The classic implementation of the pattern relies on support for nested classes, 
 
   From a component’s perspective, it all looks like a total black box. The sender doesn’t know who’ll end up handling its request, and the receiver doesn’t know who sent the request in the first place.
   
-![Alt text](../../../basic/images/design-patterns/behavioral-design-patterns/memento-implementation-based-on-nested-classess-tructure.png?raw=true "Abstract Factory Pattern Structure")
+![Alt text](../../images/design-patterns/behavioral-design-patterns/memento-implementation-based-on-nested-classess-tructure.png?raw=true "Abstract Factory Pattern Structure")
 
 2. Implementation based on an intermediate interface: There’s an alternative implementation, suitable for programming languages that don’t support nested classes
     - In the absence of nested classes, you can restrict access to the memento’s fields by establishing a convention that caretakers can work with a memento only through an explicitly declared intermediary interface, which would only declare methods related to the memento’s metadata.
     - On the other hand, originators can work with a memento object directly, accessing fields and methods declared in the memento class. The downside of this approach is that you need to declare all members of the memento public.
-![Alt text](../../../basic/images/design-patterns/behavioral-design-patterns/memento-implementation-based-on-intermediate-interface.png?raw=true "Abstract Factory Pattern Structure")
+![Alt text](../../images/design-patterns/behavioral-design-patterns/memento-implementation-based-on-intermediate-interface.png?raw=true "Abstract Factory Pattern Structure")
 
 3. Implementation with even stricter encapsulation : There’s another implementation which is useful when you don’t want to leave even the slightest chance of other classes accessing the state of the originator through the memento.
     - This implementation allows having multiple types of originators and mementos. Each originator works with a corresponding memento class. Neither originators nor mementos expose their state to anyone.
     - Caretakers are now explicitly restricted from changing the state stored in mementos. Moreover, the caretaker class becomes independent from the originator because the restoration method is now defined in the memento class.
     - Each memento becomes linked to the originator that produced it. The originator passes itself to the memento’s constructor, along with the values of its state. Thanks to the close relationship between these classes, a memento can restore the state of its originator, given that the latter has defined the appropriate
-![Alt text](../../../basic/images/design-patterns/behavioral-design-patterns/memento-implementation-with-even-stricter-encapsulation.png?raw=true "Abstract Factory Pattern Structure")    
+![Alt text](../../images/design-patterns/behavioral-design-patterns/memento-implementation-with-even-stricter-encapsulation.png?raw=true "Abstract Factory Pattern Structure")    
 Example:
 ```php
 /**
