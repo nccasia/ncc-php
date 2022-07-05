@@ -109,3 +109,13 @@ Laravel Dusk provides an expressive, easy-to-use browser automation and testing 
 
 https://laravel.com/docs/8.x/dusk
 
+## 4. OpenServer
+- OpenServer is a software for creating webserver on windows from Russia, and there are many good utilities built in.
+- OpenServer provides users with a variety of platforms to test their products and run well in all environments.
+- OpenServer has built-in environment variables within it when working with Laravel.
+
+- Download và install OpenServer
+    - Step 1: Access the [link download](https://ospanel.io/) and select an installation file and corresponding configuration file to download and install.
+    - Step 2: Once downloaded we will have a file with the name Open_server _ ***. Exe, run the file to begin the installation.
+    - Step 3: Configure and use OpenServer.
+    - To make it easier to visualize the installation process, you go to [Link cài đặt](https://freetuts.net/cai-dat-openserver-va-tao-domain-ao-tren-localhost-281.html)
