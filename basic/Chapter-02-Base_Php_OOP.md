@@ -349,6 +349,23 @@ class Professor
 }
 ```
 
+**Method override, overload**
+<br>
+_Override (ghi đè):<br>
+Là việc 1 phương thức xuất hiện ở cả class cha và class con.<br>
+Khi 1 đối tượng thuộc class con gọi phương thức, sẽ thực thi phương thức định nghĩa trong class con.<br>
+Nếu class con không định nghĩa lại phương thức thì sẽ thực thi phương thức định nghĩa trong class cha.<br>
+Thể hiện tính đa hình của OOP khi thực thi.<br>
+
+Ví dụ: ta có ví dụ ứng dụng trong Repository trong laravel. Ở BaseRepo đã định nghĩa 1 phương thức dùng chung là getAll() chẳng hạn, tuy nhiên ở PostRepo chúng ta lại muốn dùng hàm getAll() nhưng kèm theo phân trang. Chúng ta sẽ override hàm getAll() trong PostRepo, thêm phân trang vào kết quả trả về.
+
+_Overload (nạp chồng):
+Trong 1 class có nhiều thuộc tính, phương thức tên giống nhau, khác nhau về kiểu dữ liệu hay số lượng tham số gọi là khai báo overloading method.<br>
+Khi gọi phương thức, tuỳ vào kiểu dữ liệu và số lượng đối số truyền vào mà phương thức tương ứng được gọi.<br>
+Thể hiện tính đa hình khi biên dịch của OOP.<br>
+
+Ví dụ: 3 phương thức đều có tên là tính diện tích, nhưng số lượng tham số khác nhau (1, 2, 3). Nếu gọi phương thức và truyền vào 1 đối số sẽ hiểu là gọi hàm tính S hình vuông, 2 đối số sẽ hiểu tính S hình chữ nhật, 3 đối số thì tính S hình tam giác.
+
 ## 2. OOP
 
 ### 2-1. What's OOP?

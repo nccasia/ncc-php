@@ -81,11 +81,18 @@ After committing, you push the code to the branch:
 - Commit represents a specific moment in your project history. Using the commit and git add commands keeps your changes saved to local repository.
 
 #### 3. Checkout
-- Use **git checkout** to switch between branches
-    - git checkout "name-branch"
- 
+Use **git checkout** to switch between branches
+
+    - git checkout name_branch
+
+Or revert your changes in 1 or some files
+
+    - git checkout file_path_1 file_path_2
+
 #### 4. Fetch
-- The git fetch command fetches the copies and downloads all branches to your computer.
+The git fetch command fetches the copies and downloads all branches to your computer.
+
+    - git fetch
 
 #### 5. Head
 - Commits at the beginning of a branch are called Head. 
@@ -105,14 +112,18 @@ It represents the most recent commit of the repository you are working on.
 - git push origin master => to push local changes to the main branch.
 
 #### 10. Pull
-- To pull all the pushed code back to your branch
+To pull all the pushed code back to your branch
+
     - git pull
 
 #### 11. Push
 - The git push command is used to push the code to your branch.
 
 #### 12. Rebase
-- The git rebase command allows you to split, move, and exit a commit. It can also be used to combine two branches.
+The git rebase command allows you to split, move, and exit a commit. It can also be used to combine two branches.
+Follow the below link:
+[https://hoangphiit.com/post/cach-gop-nhieu-commit-thanh-mot-voi-git-rebase](https://hoangphiit.com/post/cach-gop-nhieu-commit-thanh-mot-voi-git-rebase)
+
 
 #### 13. Stash
 - Lệnh git stash để lưu lại các công việc mình đang làm việc trên branch hiện tại, 
@@ -166,3 +177,14 @@ Open up the PHPStorm IDE. Into the [ File ] -> [ Setting ] -> [ Languages & Fram
 **Install Phpstorm**
 - Please refer to the following link:
 [link download and setup phpstorm](https://khophanmem24h.com/download-phpstorm-2019/)
+
+**Some common short keys**
+Ctr + F: search kí tự trong file hiện tại
+Ctrl + Shift + F: search kí tự trong toàn bộ project
+double Shift: search theo tên file
+Ctrl + Alt + S: mở setting
+Ctrl + Alt + L: format code
+Shift + F6: đổi tên file (trước đó click vào file bên cây thư mục)
+Ctrl + X: xóa dòng đang chứa con trỏ
+Ctrl + D: nhân đôi dòng đang chứa con trỏ
+Ctrl + Shift + Z: revert file
