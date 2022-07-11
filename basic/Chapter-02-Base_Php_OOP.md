@@ -1,4 +1,8 @@
-# Chapter 02: Necessary Knowledge Base (continue)
+# Chapter 02: Base PHP, OOP
+
+Mục tiêu:<br>
+_Nắm cơ bản về ngôn ngữ lập trình php và syntax của nó.<br>
+_Hiểu về lập trình hướng đối tượng cùng với các tính chất của nó, cũng như một vài ứng dụng trong project thực tế.
 
 1. [PHP Necessary Knowledge Base](#1-php-necessary-knowledge-base)<br>
 1-1 [What is PHP](#1-1-what-is-php)<br>

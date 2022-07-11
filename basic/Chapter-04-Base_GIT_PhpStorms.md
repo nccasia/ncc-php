@@ -1,5 +1,10 @@
 # Chapter 04: GIT and PhpStorms
 
+Mục tiêu:<br>
+_Hiểu cơ bản về GIT.<br>
+_Học được cách thao tác với GIT bằng command line. Demo được 1 flow đơn giản.<br>
+_Học cách sử dụng PhpStorms, IDE phù hợp nhất khi lập trình Php.
+
 1. [GIT](#1-git)
   - [1.1 Basic commands](#11-basic-commands)
   - [1.2 Basic Git flow](#12-basic-git-flow)
@@ -8,7 +13,7 @@
     - [3. Checkout](#3-checkout)
     - [4. Fetch](#4-fetch)
     - [5. Head](#5-head)
-    - [6.  Index](#6--index)
+    - [6. Index](#6--index)
     - [7. Master](#7-master)
     - [8. Merge](#8-merge)
     - [9. Origin](#9-origin)
@@ -57,7 +62,7 @@ Check your changes
 
     - git status
 
-Add changed files to staging (use 1 space after every file path)
+Add the changed files to staging (use 1 space after every file path)
 
     - git add src/directory1/file1.xy src/directory2/file2.zt src/directory3/file3.ab
 
@@ -124,11 +129,9 @@ The git rebase command allows you to split, move, and exit a commit. It can also
 Follow the below link:
 [https://hoangphiit.com/post/cach-gop-nhieu-commit-thanh-mot-voi-git-rebase](https://hoangphiit.com/post/cach-gop-nhieu-commit-thanh-mot-voi-git-rebase)
 
-
 #### 13. Stash
 - Lệnh git stash để lưu lại các công việc mình đang làm việc trên branch hiện tại, 
-dùng git stash pop để quay trở lại thời điểm chưa git stash.  
-
+dùng git stash pop để quay trở lại thời điểm chưa git stash.
 
 ![Basic git commands](images/git_commands.jpg?raw=true "Css")
 

@@ -1,5 +1,10 @@
 # Chapter 03: MySQL and tools
 
+Mục tiêu:<br>
+_Nắm được kiến thức cơ bản về ngôn ngữ truy vấn SQL.<br>
+_Nắm được về phần mềm quản trị cơ sở dữ liệu MySQL.<br>
+_Học cách thao tác với MySQL thông qua 1 tool management tùy chọn.
+
 1. [MySQL](#1-mysql)<br>
 1. [Tools](#2-tools)<br>
 

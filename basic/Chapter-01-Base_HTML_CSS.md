@@ -1,7 +1,6 @@
-# Chapter 01: Necessary Knowledge Base
+# Chapter 01: Base HTML, CSS
 
-These are the basic knowledge required to be able to get started with PHP.
-This series focuses on PHP, so this knowledge only stops at the level of listing and introduction.
+Mục tiêu: nắm được cơ bản về html, css; có thể dựng được giao diện html từ một file thiết kế đơn giản.
 
 Table of contents
 
