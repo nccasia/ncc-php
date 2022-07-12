@@ -1,5 +1,7 @@
 # Chapter 06: Unit Test
 
+Mục tiêu: nắm được về cách viết và chạy test trong laravel.
+
 In software testing there are 4 levels of testing:
 1. Unit test
 2. Integration test

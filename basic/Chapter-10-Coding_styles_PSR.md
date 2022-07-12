@@ -1,4 +1,6 @@
-# Chapter 04: Standards PSR, Coding styles, Auto Loading
+# Chapter 10: Standards PSR, Coding styles, Auto Loading
+
+Mục tiêu: nắm được về tiêu chuẩn hiện hành khi code Php
 
 Each project when executed will use a multitude of libraries, frameworks, and components.
 So in order to easily combine different libraries for the project, the coding should follow a general rule.

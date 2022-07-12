@@ -1,4 +1,8 @@
-# **SOLID Principles**
+# Chapter 09: Coding principles
+
+Mục tiêu: nắm được về một vài nguyên lý cơ bản trong lập trình.
+
+## SOLID Principles
 
 **What is SOLID**
 
@@ -71,5 +75,8 @@ So in this case we should split into 3 interfaces:
 
     - High-level modules should not depend on low-level modules. Both should depend on abstractions.
     Abstractions should not depend on details. Details should depend on abstractions.
-    
+
+## KISS - Keep it stupid simple
+
+## DRY - Don't repeat yourself
     

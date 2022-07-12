@@ -1,4 +1,8 @@
-## 6. Chrome dev tool
+# Chapter 11: Dev tools
+
+Mục tiêu: nắm được 1 vài tool hỗ trợ dev phổ biến.
+
+## 1. Chrome dev tool
 The Chrome Developer Tool is a suite of tools that are hugely supportive for developers built into Google Chrome. DevTools provides web developers with internal access to their browsers and web applications. Use DevTools to efficiently edit HTML, CSS, and JavaScript and get insights to optimize code.
 
 **Elements**
@@ -35,7 +39,7 @@ This tab shows the js files that the browser can load. At this tab, you can debu
 
 - [https://developer.chrome.com/devtools](https://developer.chrome.com/devtools)
 
-## 7. Ngrok service
+## 2. Ngrok service
 
 ngrok secure introspectable tunnels to localhost webhook development tool and debugging tool.
 
@@ -43,7 +47,7 @@ run and publish a local website via ngrok
 
 check request logs
 
-## 8. SSH connection and key generation
+## 3. SSH connection and key generation
 
 learn how to generate a SSH key
 
