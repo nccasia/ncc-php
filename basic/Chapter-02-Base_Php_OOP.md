@@ -421,8 +421,8 @@ Example:
 ### 2-2. Basic properties
 
 **Abstraction (tính trừu tượng)**:<br>
-Tập trung vào các phương thức và đặc điểm quan trọng của đối tượng thông qua abstract class và interface.<br>
-Ví du: đối tượng là 1 chiếc máy pha cafe; chúng ta chỉ cần tập trung vào việc cung cấp nguyên liệu, bấm nút và hứng cafe từ máy, mà không cần biết đến việc xử lý bên trong thế nào.
+Là quá trình ẩn đi thông tin và cách triển khai phương thức của đối tượng với bên ngoài, thông qua việc sử dụng 1 abstraction layer.<br>
+Ví du: đối tượng là cái điều khiển, abstraction layer đóng vai trò là các nút bấm. Người dùng thao tác với điều khiển thông qua các nút bấm mà không cần quan tâm đến xử lý bên trong.
 
 **Encapsulation (tính đóng gói)**:<br>
 Tính đóng gói cho phép che giấu thông tin và những tính chất xử lý bên trong của đối tượng. Các đối tượng khác không thể tác động trực tiếp đến dữ liệu bên trong và làm thay đổi trạng thái của đối tượng mà bắt buộc phải thông qua các phương thức công khai do đối tượng đó cung cấp.<br>
@@ -431,6 +431,7 @@ Thể hiện qua access modifier của property hay method (thường các prope
 
 **Polymorphism (tính đa hình)**:<br>
 Tính đa hình trong lập trình OOP cho phép các đối tượng khác nhau thực thi chức năng giống nhau theo những cách khác nhau.
+Thể hiện qua method override/overload hoặc qua implements Interfaces
 
 **Inheritance (tính kế thừa)**:<br>
 Tính kế thừa cho phép xây dựng một lớp mới (lớp con), kế thừa và tái sử dụng các thuộc tính, phương thức dựa trên lớp cũ (lớp cha) đã có trước đó.<br>
