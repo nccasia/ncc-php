@@ -49,14 +49,18 @@ https://www.slideshare.net/rdohms/object-calisthenicstek13
 
 https://github.com/alexeymezenin/laravel-best-practices
 
-## Readability and maintainability: Is the code readable as written?  Does it require additional comments, better naming, or general refactoring to be easily understood?  Does the code generally conform to the style of coding for the project?
- - use code standard (PSR)
- - internal review before submitting
- - Names are simple and if possible short
- - Names are spelled correctly
- - No hardcoded constants that could possibly change in the future
- - There is no commented out code
- - Debugging code is absent
+## Readability and maintainability: 
+
+- Is the code readable as written?  
+- Does it require additional comments, better naming, or general refactoring to be easily understood?  
+- Does the code generally conform to the style of coding for the project?
+- use code standard (PSR)
+- internal review before submitting
+- Names are simple and if possible short
+- Names are spelled correctly
+- No hardcoded constants that could possibly change in the future
+- There is no commented out code
+- Debugging code is absent
  
  
 ## Quality and expandability:
