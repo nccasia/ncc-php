@@ -1,5 +1,30 @@
 # ncc-php
 
+## The big picture
+
+A senior PHP developer should have a strong understanding of the following:
+
+1. PHP language fundamentals such as variables, data types, loops, control structures, functions, and namespaces.
+2. Object-oriented programming concepts such as classes, interfaces, inheritance, and polymorphism.
+3. Advanced PHP features such as closures, generators, and traits.
+4. PHP web development frameworks such as Laravel, Symphony, CodeIgniter, and Yii.
+5. Database management and integration, including experience with SQL and popular PHP database libraries such as PDO and MySQLi.
+6. Web development best practices such as security, performance optimization, and scalability.
+7. Experience with version control systems such as Git.
+8. Understanding of web protocols such as HTTP, HTTPS, and REST.
+9. Familiarity with front-end web development technologies such as HTML, CSS, and JavaScript.
+10. Familiarity with software development methodologies such as Agile, Scrum, and Kanban.
+11. Good understanding of software development life cycle (SDLC)
+12. Familiarity with cloud infrastructure like AWS, Azure, and Google Cloud.
+13. Knowledge of Linux environment
+14. Experience with debugging and troubleshooting complex issues.
+15. Strong problem-solving skills and ability to think critically.
+16. Good communication skills and ability to work well in a team.
+17. Ability to learn and adapt to new technologies and programming languages quickly
+18. Continuously learning and staying current with new trends and developments in PHP and related technologies.
+
+Note that this is not an exhaustive list, but it covers many of the core skills and knowledge areas that are typically required of a senior PHP developer.
+
 ## Before starting
 
 - This repository is using for training purpose (1 - 4 weeks for a newbie)
@@ -22,9 +47,9 @@
 ## Other topics:
 
 1. Debugging
-2. Basic Linux commands, Cron jobs
+2. [Basic Linux commands](https://github.com/MichaelCade/90DaysOfDevOps/blob/main/2022/Days/day15.md)
 3. SQL Databases: Design, Queries, Indexes
-4. DDD - domain driven design
+4. [DDD - domain driven design](https://github.com/nccasia/ncc-php-bdd)
 5. Web Securities
 6. How a browser works
 7. Authentication - Session, Cookies, JSON Web token
