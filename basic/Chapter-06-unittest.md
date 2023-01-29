@@ -1,4 +1,8 @@
-# Chapter 06: Unit Test
+- [Testing](#testing)
+  - [Mockery](#mockery)
+  - [Laravel Dusk](#laravel-dusk)
+
+# Testing
 
 In software testing there are 4 levels of testing:
 1. Unit test
@@ -145,3 +149,9 @@ class Temperature
     }
 }
 ```
+
+## Laravel Dusk
+
+Laravel Dusk provides an expressive, easy-to-use browser automation and testing API. By default, Dusk does not require you to install JDK or Selenium on your local computer. Instead, Dusk uses a standalone ChromeDriver installation.
+
+https://laravel.com/docs/8.x/dusk

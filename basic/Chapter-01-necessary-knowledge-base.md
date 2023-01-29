@@ -1,15 +1,22 @@
 # Chapter 01: Necessary Knowledge Base
 
-These are the basic knowledge required to be able to get started with PHP.
-This series focuses on PHP, so this knowledge only stops at the level of listing and introduction.
+These are the basic knowledge required to be able to get started with PHP progamming.
 
 Table of contents
+- [Chapter 01: Necessary Knowledge Base](#chapter-01-necessary-knowledge-base)
+  - [1. Basic Html](#1-basic-html)
+    - [1.1 What is Html?](#11-what-is-html)
+    - [1.2 Html Syntax Structure](#12-html-syntax-structure)
+  - [2. Css](#2-css)
+    - [2.1 What is Css?](#21-what-is-css)
+    - [2.2 Css syntax structure](#22-css-syntax-structure)
+  - [3. PHP Necessary Knowledge Base](#3-php-necessary-knowledge-base)
+    - [3.1 What is PHP?](#31-what-is-php)
+    - [3.2  Basic PHP Syntax](#32--basic-php-syntax)
+    - [3.3 Magic methods, trait, reflection](#33-magic-methods-trait-reflection)
+  - [4. PHP Extensions](#4-php-extensions)
+  - [5. Web service components overview](#5-web-service-components-overview)
 
-1. [Basic Html](#1-basic-html)
-2. [Css](#2-css)
-3. [PHP Necessary Knowledge Base](#3-php-necessary-knowledge-base)
-4. [Popular PHP Extensions](#4-popular-php-extensions)
-5. [Web server](#5-web-server)
 
 ---
 
@@ -35,8 +42,6 @@ Below is an example of one of the simplest examples of an HTML document.
 
 HTML is tag language and uses different tags to format the content. These tags are contained within two parentheses <tag name>.
 Except for a few tags, most tags have their corresponding closing tags. For example, the tag `<html>` has a close tag of `</html>`, and the `<body>` tag has a corresponding close tag of `</body>`...
-	
-Think that if the website is a complete body, the HTML is the skeleton of that body.
 
 Website has two main types:
 
@@ -180,6 +185,7 @@ echo ‘Hello World’;
 # This is comment
 ?>
 ```
+
 **How to comment code**
 
 Comment lines are comments to aid in reading and understanding code.
@@ -303,10 +309,19 @@ When calling the function "sum" as follows, we get the sum of 2 numbers is 5 and
 To learn more about PHP, you can refer to the following link:
 [https://www.w3schools.com/php](https://www.w3schools.com/php)
 
-## Magic methods, trait, reflection
+### 3.3 Magic methods, trait, reflection
 
-## 4. Popular PHP Extensions
-### 4.1 PHP Extensions là gì?
+Magic methods are special methods which override PHP's default's action when certain actions are performed on an object.
+
+1. https://www.php.net/manual/en/language.oop5.decon.php#object.construct
+2. https://www.php.net/manual/en/language.oop5.magic.php#object.tostring
+3. https://www.php.net/manual/en/language.oop5.magic.php#object.serialize
+
+Traits are a mechanism for code reuse in single inheritance languages such as PHP. A Trait is intended to reduce some limitations of single inheritance by enabling a developer to reuse sets of methods freely in several independent classes living in different class hierarchies. 
+
+
+
+## 4. PHP Extensions
 
 PHP runs on Zend Engine platform. Zend Engine takes care of interpreting PHP code into machine code and executing it.
 
@@ -317,10 +332,21 @@ Here are the popular PHP extensions that often required in your future work:
 - bcMath
 - cURL
 - mcrypt
-- ...
+- php-mysql
 
+You can install a PHP extension using one of the following methods:
 
-## 5. Web service
+1. Using a package manager: If your web server is running on a Linux or UNIX-based system, you can use a package manager such as apt-get or yum to install the extension. For example, to install the MySQL extension on Ubuntu, you can use the command: sudo apt-get install php-mysql
+
+2. Using the PECL command: PECL is a repository for PHP extensions. You can use the PECL command to install an extension. For example, to install the MongoDB extension, you can use the command: pecl install mongodb
+
+3. Compiling from source: You can also install an extension by downloading the source code and compiling it yourself. This is typically more advanced and is not recommended for beginners.
+
+Once you have installed the extension, you will need to check the php.ini file, find the line ;extension=module.so and remove the ; before the extension you want to enable. After that restart your web server for the changes to take effect.
+
+It's worth noting that some extensions may have additional dependencies that need to be installed as well. 
+
+## 5. Web service components overview
 
 Here are some basic components of a web service
 

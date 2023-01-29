@@ -1,12 +1,69 @@
-# **API RESTful**
+- [MVC pattern](#mvc-pattern)
+- [API RESTful](#api-restful)
+
+
+# MVC pattern
+
+MVC is an acronym which stands for 3 words Model - View - Controller. 
+Source code model into 3 parts, corresponding to each word. 
+Each word corresponds to a separate activity in a pattern.
+
+**Functions of each component in the MVC model:**
+
+**- Model (M):** The part that stores all of the application's data. 
+This part is a bridge between two components below is View and Controller.
+The model shown in the form is a database.
+It shows operations with the database such as retrieving and processing data.
+
+**- View (V):** This is the interface (theme) for the user. 
+It is responsible for displaying data and helping users interact with the system.
+
+**- Controller (C):** Controller is responsible for handling user requests through the view. 
+From there, Controller gives the data relevant to the user. 
+Besides, Controller also has the function to connect to the model.
+
+##6. Activity flow of MVC
+
+![Alt text](images/mvc.PNG)
+
+- After receiving a request from the browser, Controller will interact with the model to get data. 
+The model interacts with the database to get data, 
+the returned data is sent back to the Model, from the Model sent back to the Controller, 
+the Controller calls View to transfer the data just received from the Model to the View, 
+the View will render that data to the browser.
+
+##7. Example
+
+Here is an example taking all users for the user:
+
+**- Controller:**
+
+![Alt text](images/controller-user.PNG)
+
+**- Model:**
+
+![Alt text](images/model-user.PNG)
+
+**- View:**
+
+![Alt text](images/view-user.PNG)
+
+**- Database table users:**
+
+![Alt text](images/database.PNG)
+
+**- User Interface:**
+
+![Alt text](images/interface-user.PNG)
+
+# API RESTful
 
 ####**1. What is API**
-As per [Wikipedia's Definition of API](https://en.wikipedia.org/wiki/API): In computer programming, an application programming interface (API) is a set of subroutine definitions, protocols, and tools for building software and applications.
+
+In computer programming, an application programming interface (API) is a set of subroutine definitions, protocols, and tools for building software and applications.
 
 ####**2. What is Web API**
-**To put it in simple terms, API is some kind of interface which has a set of functions that allow programmers to access specific features or data of an application, operating system or other services.**
-
-**Web API as the name suggests, is an API over the web which can be accessed using HTTP protocol.**
+To put it in simple terms, API is some kind of interface which has a set of functions that allow programmers to access specific features or data of an application, operating system or other services.
 
 ####**3. What is REST**
 

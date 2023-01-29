@@ -1,4 +1,11 @@
-# **SOLID Principles**
+- [SOLID Principles](#solid-principles)
+  - [S: Single-responsibility principle](#s-single-responsibility-principle)
+  - [O: Open-closed principle](#o-open-closed-principle)
+  - [L: Liskov substitution principle](#l-liskov-substitution-principle)
+  - [I: Interface segregation principle](#i-interface-segregation-principle)
+  - [D: Dependency Inversion Principle](#d-dependency-inversion-principle)
+
+# SOLID Principles
 
 **What is SOLID**
 
@@ -9,7 +16,7 @@ SOLID helps developers to write code that is easy to read, understand, and maint
 
 **SOLID PRINCIPLES**
 
-**- S:** Single-responsibility principle
+## S: Single-responsibility principle
 
     - A class should have only one responsibility
     
@@ -23,7 +30,7 @@ In principle we should separate the 3 classes as follows:
 
 ![Alt text](images/Single-responsibility.PNG)
 
-**- O:** Open-closed principle
+## O: Open-closed principle
 
     - The class can be extended but not to change the old class
 Example: I want to calculate the total area of an array consisting of the following geometry:
@@ -39,7 +46,7 @@ That is wrong of principle. We need to do the following:
 With the above code, if you want to calculate more circles, triangles, 
 you just need to create add a class and implement the Shape interface.
 
-**- L:** Liskov substitution principle
+## L: Liskov substitution principle
 
     - Instances of subclasses can replace the parent class instance while still ensuring the correctness of the program.
 A company has 2 types of employees: full-time employees, unpaid interns. 
@@ -55,7 +62,7 @@ we will implement it.
 ![Alt text](images/Liskov-Substitution-two.PNG)
 
 
-**- I:** Interface segregation principle
+## I: Interface segregation principle
 
     - If the Interface is too large, we should split into smaller interfaces
 For example you have a common interface for developers:
@@ -67,7 +74,7 @@ So in this case we should split into 3 interfaces:
 
 ![Alt text](images/Interface-Segregation-two.PNG)
 
-**- D:** Dependency Inversion Principle
+## D: Dependency Inversion Principle
 
     - High-level modules should not depend on low-level modules. Both should depend on abstractions.
     Abstractions should not depend on details. Details should depend on abstractions.

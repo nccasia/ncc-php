@@ -2,6 +2,13 @@
 
 ## The big picture
 
+PHP is a server-side scripting language that is primarily used for web development. Some common areas where PHP is used include:
+
+1. Web development: PHP is a popular choice for building dynamic web applications and websites. It is often used in combination with HTML, CSS, and JavaScript to create interactive and user-friendly web pages.
+2. Content Management Systems (CMS): PHP is the language behind many popular open-source CMS such as WordPress, Joomla and Drupal.
+3. E-commerce: PHP is a common choice for building online stores and e-commerce platforms. 
+4. Web scraping and data mining: PHP can be used to extract data from websites and to automate various data mining tasks.
+
 A senior PHP developer should have a strong understanding of the following:
 
 1. PHP language fundamentals such as variables, data types, loops, control structures, functions, and namespaces.
@@ -35,14 +42,13 @@ Note that this is not an exhaustive list, but it covers many of the core skills 
 
 1. [Chapter 01: Necessary Knowledge Base](./basic/Chapter-01-necessary-knowledge-base.md)  
 2. [Chapter 02: OOP, design patterns](./basic/Chapter-02-oop-design-pattern.md)  
-3. [Chapter 03: Development tools](./basic/Chapter-03-Development-tools.md)
+3. [Chapter 03: Development tools](./basic/Chapter-03-development-tools.md)
 4. [Chapter 04: Standards PSR, Coding styles, Auto Loading](./basic/Chapter-04-standards-psr-coding-styles-autoloading.md)  
-5. [Chapter 05: Laravel framework](./basic/Chapter-05-Laravel-framework.md)
+5. [Chapter 05: MVC and API Restful](./basic/Chapter-05-MVC-API-RESTful.md)
 6. [Chapter 06: Unit test](./basic/Chapter-06-unittest.md)
-7. [Chapter 07: API Restful](./basic/Chapter-07-API-RESTful.md)
-8. [Chapter 08: SOLID principles](./basic/Chapter-08-SOLID-principles.md)
-9. [Chapter 09: A small project on Laravel](./basic/Chapter-09-A-small-project-on-Laravel.md)
-10. [Chapter 10: Docker, Github actions, working rules, tips and trick for a developer](./basic/Chapter-10-CI-CD-Working-rules.md) 
+7. [Chapter 07: SOLID principles](./basic/Chapter-07-SOLID-principles.md)
+8. [Chapter 08: Laravel framework](./basic/Chapter-08-Laravel-framework.md)
+9. [Chapter 09: Docker, Github actions, working rules, tips and trick for a developer](./basic/Chapter-09-CI-CD-Working-rules.md) 
 
 ## Other topics:
 
