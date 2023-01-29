@@ -52,17 +52,18 @@ Note that this is not an exhaustive list, but it covers many of the core skills 
 
 ## Other topics:
 
-1. Debugging
-2. [Basic Linux commands](https://github.com/MichaelCade/90DaysOfDevOps/blob/main/2022/Days/day15.md)
-3. SQL Databases: Design, Queries, Indexes
-4. [DDD - domain driven design](https://github.com/nccasia/ncc-php-bdd)
-5. Web Securities
-6. How a browser works
-7. Authentication - Session, Cookies, JSON Web token
-8. NoSQL databases
-9. Realtime application
-10. Role and permission
-11. [NCC React Basic](https://nccasia.github.io/ncc-react-basic/)
+1. Postman usage
+2. [Debugging](./others/debugging.md)
+3. [Basic Linux commands](https://github.com/MichaelCade/90DaysOfDevOps/blob/main/2022/Days/day15.md)
+4. SQL Databases: Design, Queries, Indexes
+5. [DDD - domain driven design](https://github.com/nccasia/ncc-php-bdd)
+6. Web Securities
+7. [How a browser works](https://github.com/nccasia/ncc-python-learning/blob/main/web/how_web_works.md)
+8. Authentication - Session, Cookies, JSON Web token
+9. NoSQL databases
+10. Realtime application
+11. Role and permission
+12. [NCC React Basic](https://nccasia.github.io/ncc-react-basic/)
 
 ## Useful Links:
 

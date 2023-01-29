@@ -4,6 +4,7 @@
   - [2. Install laravel](#2-install-laravel)
   - [3. The structure of Laravel](#3-the-structure-of-laravel)
   - [4. Example projects in laravel](#4-example-projects-in-laravel)
+  - [5. Commons artisan commands](#5-commons-artisan-commands)
 
 
 # Overview
@@ -103,3 +104,13 @@ https://github.com/chiraggude/awesome-laravel
 https://github.com/munafio/chatify
 
 https://github.com/z-song/laravel-admin
+
+## 5. Commons artisan commands
+
+```
+php artisan serve
+php artisan key:generate
+php artisan migrate
+php artisan cache:clear
+composer dump-autoload
+```
