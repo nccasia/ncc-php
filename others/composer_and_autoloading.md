@@ -2,6 +2,10 @@
 
 ### Class loading
 
+Auto loaders in PHP are lazy. When PHP encounters a the use of a class it doesn't know about, it will ask the registered autoloader (or chain of autoloaders) to go find it. It's the autoloader's job to figure out where to get the file the class is defined in and include it. 
+
+https://www.php.net/manual/en/language.oop5.autoload.php
+
 ```
 requires /path/to/classfile
 ```
