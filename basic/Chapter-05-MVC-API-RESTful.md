@@ -1,5 +1,13 @@
 - [MVC pattern](#mvc-pattern)
+  - [Activity flow of MVC](#activity-flow-of-mvc)
+  - [Example](#example)
 - [API RESTful](#api-restful)
+  - [What is API](#what-is-api)
+  - [What is Web API](#what-is-web-api)
+  - [What is REST](#what-is-rest)
+  - [What is API RESTful](#what-is-api-restful)
+  - [Guiding Principles of REST](#guiding-principles-of-rest)
+- [User Authentication and authorization methods](#user-authentication-and-authorization-methods)
 
 
 # MVC pattern
@@ -22,7 +30,7 @@ It is responsible for displaying data and helping users interact with the system
 From there, Controller gives the data relevant to the user. 
 Besides, Controller also has the function to connect to the model.
 
-##6. Activity flow of MVC
+## Activity flow of MVC
 
 ![Alt text](images/mvc.PNG)
 
@@ -32,7 +40,7 @@ the returned data is sent back to the Model, from the Model sent back to the Con
 the Controller calls View to transfer the data just received from the Model to the View, 
 the View will render that data to the browser.
 
-##7. Example
+## Example
 
 Here is an example taking all users for the user:
 
@@ -58,19 +66,36 @@ Here is an example taking all users for the user:
 
 # API RESTful
 
-####**1. What is API**
+## What is API
 
-In computer programming, an application programming interface (API) is a set of subroutine definitions, protocols, and tools for building software and applications.
+An application programming interface (API) is a way for two or more computer programs to communicate with each other. It is a type of software interface, offering a service to other pieces of software.
 
-####**2. What is Web API**
-To put it in simple terms, API is some kind of interface which has a set of functions that allow programmers to access specific features or data of an application, operating system or other services.
+One purpose of APIs is to hide the internal details of how a system works, exposing only those parts a programmer will find useful and keeping them consistent even if the internal details later change.
 
-####**3. What is REST**
+## What is Web API
+
+A Web API is an application programming interface for the Web.
+
+```
+Google Maps API
+Twitter API
+Facebook API
+Stripe API (Payments)
+AWS (Amazon Web Services) API
+Twilio API (Communications)
+Salesforce API
+Slack API (Collaboration)
+Stripe API (Payments)
+Spotify API (Music)
+```
+
+## What is REST
 
 REST, or REpresentational State Transfer, is an architectural style for providing standards between computer systems on the web, making it easier for systems to communicate with each other. REST-compliant systems, often called RESTful systems, are characterized by how they are stateless and separate the concerns of client and server
 
-####**4. What is API RESTful**
-**A RESTful API is an architectural style for an application program interface (API) that uses HTTP requests to access and use data. That data can be used to GET, PUT, POST and DELETE data types, which refers to the reading, updating, creating and deleting of operations concerning resources.**
+## What is API RESTful
+
+A RESTful API is an architectural style for an application program interface (API) that uses HTTP requests to access and use data. That data can be used to GET, PUT, POST and DELETE data types, which refers to the reading, updating, creating and deleting of operations concerning resources.
 
 A RESTful API uses commands to obtain resources. The state of a resource at any given timestamp is called a resource representation. A RESTful API uses existing HTTP methodologies defined by the RFC 2616 protocol, such as:
 
@@ -86,17 +111,13 @@ Data formats the REST API supports include:
 - application/x-www-form-urlencoded
 - multipart/form-data
 
-####**4. Guiding Principles of REST**
+## Guiding Principles of REST
 - **Client–server** – By separating the user interface concerns from the data storage concerns, we improve the portability of the user interface across multiple platforms and improve scalability by simplifying the server components.
 - **Stateless** – Each request from client to server must contain all of the information necessary to understand the request, and cannot take advantage of any stored context on the server. Session state is therefore kept entirely on the client.
 - **Cacheable** – Cache constraints require that the data within a response to a request be implicitly or explicitly labeled as cacheable or non-cacheable. If a response is cacheable, then a client cache is given the right to reuse that response data for later, equivalent requests.
 - **Uniform** interface – By applying the software engineering principle of generality to the component interface, the overall system architecture is simplified and the visibility of interactions is improved. In order to obtain a uniform interface, multiple architectural constraints are needed to guide the behavior of components. REST is defined by four interface constraints: identification of resources; manipulation of resources through representations; self-descriptive messages; and, hypermedia as the engine of application state.
 - **Layered system** – The layered system style allows an architecture to be composed of hierarchical layers by constraining component behavior such that each component cannot “see” beyond the immediate layer with which they are interacting.
 - **Code on demand** (optional) – REST allows client functionality to be extended by downloading and executing code in the form of applets or scripts. This simplifies clients by reducing the number of features required to be pre-implemented.
-
-
-Keyword: web api restful
-
 
 5. HTTP code response status code
 
@@ -107,4 +128,9 @@ Keyword: web api restful
 - 404 Not Found (The requested resource could not be found but may be available in the future. Subsequent requests by the client are permissible.)
 - 405 Method Not Allowed
 - 500 Internal Server Error 
-- 
+
+# User Authentication and authorization methods
+
+Exercise:
+
+Desribe methods for each pattern and explain

@@ -1,10 +1,9 @@
 - [Standards PSR, Coding styles, Auto Loading](#standards-psr-coding-styles-auto-loading)
-  - [1. PSR-0: Auto loading Standard](#1-psr-0-auto-loading-standard)
-  - [2. PSR-1: Basic Coding Standard](#2-psr-1-basic-coding-standard)
-  - [3. PSR-2: Coding Style Guide](#3-psr-2-coding-style-guide)
+  - [1. PSR-1: Basic Coding Standard](#1-psr-1-basic-coding-standard)
+  - [2. PSR-2: Coding Style Guide](#2-psr-2-coding-style-guide)
+  - [3. PSR-0: Auto loading Standard](#3-psr-0-auto-loading-standard)
   - [4. PSR-4: Autoloader](#4-psr-4-autoloader)
 - [How to setup style configuration on PhpStorm](#how-to-setup-style-configuration-on-phpstorm)
-- [Composer](#composer)
 - [PHPStan vs PHP CodeSniffer](#phpstan-vs-php-codesniffer)
   - [Setup \& Run PHPStan - PHP Static Analysis Tool](#setup--run-phpstan---php-static-analysis-tool)
   - [Setup \& Run code sniffer](#setup--run-code-sniffer)
@@ -19,12 +18,11 @@ In this section we will learn how to code according to the standards recommended
 Table of contents
 
 - [Standards PSR, Coding styles, Auto Loading](#standards-psr-coding-styles-auto-loading)
-  - [1. PSR-0: Auto loading Standard](#1-psr-0-auto-loading-standard)
-  - [2. PSR-1: Basic Coding Standard](#2-psr-1-basic-coding-standard)
-  - [3. PSR-2: Coding Style Guide](#3-psr-2-coding-style-guide)
+  - [1. PSR-1: Basic Coding Standard](#1-psr-1-basic-coding-standard)
+  - [2. PSR-2: Coding Style Guide](#2-psr-2-coding-style-guide)
+  - [3. PSR-0: Auto loading Standard](#3-psr-0-auto-loading-standard)
   - [4. PSR-4: Autoloader](#4-psr-4-autoloader)
 - [How to setup style configuration on PhpStorm](#how-to-setup-style-configuration-on-phpstorm)
-- [Composer](#composer)
 - [PHPStan vs PHP CodeSniffer](#phpstan-vs-php-codesniffer)
   - [Setup \& Run PHPStan - PHP Static Analysis Tool](#setup--run-phpstan---php-static-analysis-tool)
   - [Setup \& Run code sniffer](#setup--run-code-sniffer)
@@ -34,7 +32,57 @@ Table of contents
 **Standards PSR**
 PSR(PHP Standards Recommendation) - these are documents that lay out how the PHP community has agreed things will be done.
 The standards are developed by the FIG (Framework Interoperability Group), which draws members from all the major frameworks and tools built in PHP. Since they have been very widely adopted around the PHP world
-## 1. PSR-0: Auto loading Standard
+## 1. PSR-1: Basic Coding Standard
+**Overview**
+
+1. Files MUST use only <?php and <?= tags.
+
+2. Files MUST use only UTF-8 without BOM for PHP code.
+
+3. Files SHOULD either declare symbols (classes, functions, constants, etc.) or cause side-effects (e.g. generate output, change .ini settings, etc.) but SHOULD NOT do both.
+
+4. Namespaces and classes MUST follow an “autoloading” PSR: [PSR-0, PSR-4].
+
+5. Class names MUST be declared in StudlyCaps.
+
+6. Class constants MUST be declared in all upper case with underscore separators.
+
+7. This guide intentionally avoids any recommendation regarding the use of $StudlyCaps, $camelCase, or $under_score property names.
+   
+   Whatever naming convention is used SHOULD be applied consistently within a reasonable scope. That scope may be vendor-level, package-level, class-level, or method-level. 
+
+8. Method names MUST be declared in camelCase().
+
+For better understanding, you can refer to the following documents:
+[https://www.php-fig.org/psr/psr-1/](https://www.php-fig.org/psr/psr-1/)
+
+## 2. PSR-2: Coding Style Guide
+This guide extends and expands on PSR-1, the basic coding standard.
+1. Code MUST follow a “coding style guide” PSR [PSR-1].
+
+2. Code MUST use 4 spaces for indenting, not tabs.
+
+3. There MUST NOT be a hard limit on line length; the soft limit MUST be 120 characters; lines SHOULD be 80 characters or less.
+
+4. There MUST be one blank line after the namespace declaration, and there MUST be one blank line after the block of use declarations.
+
+5. Opening braces for classes MUST go on the next line, and closing braces MUST go on the next line after the body.
+
+6. Opening braces for methods MUST go on the next line, and closing braces MUST go on the next line after the body.
+
+7. Visibility MUST be declared on all properties and methods; abstract and final MUST be declared before the visibility; static MUST be declared after the visibility.
+
+8. Control structure keywords MUST have one space after them; method and function calls MUST NOT.
+
+9. Opening braces for control structures MUST go on the same line, and closing braces MUST go on the next line after the body.
+
+10. Opening parentheses for control structures MUST NOT have a space after them, and closing parentheses for control structures MUST NOT have a space before.
+
+For better understanding, you can refer to the following documents:
+[https://www.php-fig.org/psr/psr-2/](https://www.php-fig.org/psr/psr-2/)
+
+## 3. PSR-0: Auto loading Standard
+
 **Mandatory**
 1. A fully-qualified namespace and class must have the following structure \<Vendor Name>\(<Namespace>\)*<Class Name>
 
@@ -59,55 +107,6 @@ The standards we set here should be the lowest common denominator for painless a
 
 For better understanding, you can refer to the following documents:
 [https://www.php-fig.org/psr/psr-0/](https://www.php-fig.org/psr/psr-0/)
-
-## 2. PSR-1: Basic Coding Standard
-**Overview**
-
-1. Files MUST use only <?php and <?= tags.
-
-2. Files MUST use only UTF-8 without BOM for PHP code.
-
-3. Files SHOULD either declare symbols (classes, functions, constants, etc.) or cause side-effects (e.g. generate output, change .ini settings, etc.) but SHOULD NOT do both.
-
-4. Namespaces and classes MUST follow an “autoloading” PSR: [PSR-0, PSR-4].
-
-5. Class names MUST be declared in StudlyCaps.
-
-6. Class constants MUST be declared in all upper case with underscore separators.
-
-7. This guide intentionally avoids any recommendation regarding the use of $StudlyCaps, $camelCase, or $under_score property names.
-   
-   Whatever naming convention is used SHOULD be applied consistently within a reasonable scope. That scope may be vendor-level, package-level, class-level, or method-level. 
-
-8. Method names MUST be declared in camelCase().
-
-For better understanding, you can refer to the following documents:
-[https://www.php-fig.org/psr/psr-1/](https://www.php-fig.org/psr/psr-1/)
-
-## 3. PSR-2: Coding Style Guide
-This guide extends and expands on PSR-1, the basic coding standard.
-1. Code MUST follow a “coding style guide” PSR [PSR-1].
-
-2. Code MUST use 4 spaces for indenting, not tabs.
-
-3. There MUST NOT be a hard limit on line length; the soft limit MUST be 120 characters; lines SHOULD be 80 characters or less.
-
-4. There MUST be one blank line after the namespace declaration, and there MUST be one blank line after the block of use declarations.
-
-5. Opening braces for classes MUST go on the next line, and closing braces MUST go on the next line after the body.
-
-6. Opening braces for methods MUST go on the next line, and closing braces MUST go on the next line after the body.
-
-7. Visibility MUST be declared on all properties and methods; abstract and final MUST be declared before the visibility; static MUST be declared after the visibility.
-
-8. Control structure keywords MUST have one space after them; method and function calls MUST NOT.
-
-9. Opening braces for control structures MUST go on the same line, and closing braces MUST go on the next line after the body.
-
-10. Opening parentheses for control structures MUST NOT have a space after them, and closing parentheses for control structures MUST NOT have a space before.
-
-For better understanding, you can refer to the following documents:
-[https://www.php-fig.org/psr/psr-2/](https://www.php-fig.org/psr/psr-2/)
 
 ## 4. PSR-4: Autoloader
 This PSR describes a specification for autoloading classes from file paths. It is fully interoperable, and can be used in addition to any other autoloading specification, including PSR-0. This PSR also describes where to place files that will be autoloaded according to the specification.
@@ -155,41 +154,6 @@ There are also other standards, For better understanding, you can refer to the f
 **Format code in PhpStorm Editor**
 
 We highlight the code to be formatted. Then simultaneously press 3 keys "Crtl + Alt + L"
-
-# Composer
-Composer is a dependency manager for PHP (similar to Bundler for Ruby apps). Composer allows developers to specify project dependencies in a composer.json file and then Composer automatically handles the rest.
-
-Composer makes it easier to keep vendor libraries out of your repo, meaning that only application code goes in the git repository. It also makes maintaining the latest versions of all required libraries easier because you can simply run composer update to get the latest compatible packages.
-
-**Installation Composer**
-This is the easiest way to get Composer set up on your machine.
-
-Download and run [Composer-Setup.exe](https://getcomposer.org/Composer-Setup.exe). It will install the latest Composer version and set up your PATH so that you can call composer from any directory in your command line.
-
-Test usage with a new terminal:
-```
-C:\Users\username>composer -V
-Composer version 1.0.0 2016-01-10 20:34:53
-```
-Now that you've installed Composer, you are ready to use it!
-
-1. Create your composer.json file to declare your dependencies.
-
-2. The composer.json file specifies required packages.
-
-3. Run composer install (on your local machine) to install the required packages and generate a composer.lock file.
-You can even add your own code to the autoloader by adding an autoload field to composer.json
-```
-{
-    "autoload": {
-        "psr-4": {"Ncc\\": "src/"}
-    }
-}
-```
-
-Composer will register a PSR-4 autoloader for the Ncc namespace.
-
-You define a mapping from namespaces to directories. The src directory would be in your project root, on the same level as vendor directory is. An example filename would be src/Foo.php containing an Ncc\Foo class.
 
 # PHPStan vs PHP CodeSniffer
 

@@ -43,11 +43,11 @@ Note that this is not an exhaustive list, but it covers many of the core skills 
 1. [Chapter 01: Necessary Knowledge Base](./basic/Chapter-01-necessary-knowledge-base.md)  
 2. [Chapter 02: OOP, design patterns](./basic/Chapter-02-oop-design-pattern.md)  
 3. [Chapter 03: Development tools](./basic/Chapter-03-development-tools.md)
-4. [Chapter 04: Standards PSR, Coding styles, Auto Loading](./basic/Chapter-04-standards-psr-coding-styles-autoloading.md)  
+4. [Chapter 04: Laravel framework](./basic/Chapter-04-Laravel-framework.md)
 5. [Chapter 05: MVC and API Restful](./basic/Chapter-05-MVC-API-RESTful.md)
 6. [Chapter 06: Unit test](./basic/Chapter-06-unittest.md)
 7. [Chapter 07: SOLID principles](./basic/Chapter-07-SOLID-principles.md)
-8. [Chapter 08: Laravel framework](./basic/Chapter-08-Laravel-framework.md)
+8. [Chapter 08: Standards PSR, Coding styles, Auto Loading](./basic/Chapter-08-standards-psr-coding-styles-autoloading.md)  
 9. [Chapter 09: Docker, Github actions, working rules, tips and trick for a developer](./basic/Chapter-09-CI-CD-Working-rules.md) 
 
 ## Other topics:

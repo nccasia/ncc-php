@@ -1,4 +1,7 @@
 - [Overview](#overview)
+- [](#)
+- [Composer](#composer)
+  - [Installation Composer](#installation-composer)
 - [Laravel framework](#laravel-framework)
   - [1. About Laravel](#1-about-laravel)
   - [2. Install laravel](#2-install-laravel)
@@ -14,6 +17,7 @@ A web framework (WF) or web application framework (WAF) is a software framework 
 It is a collection of packages or modules which allow developers to write Web applications (see WebApplications) or services without having to handle such low-level details as protocols, sockets or process/thread management.
 
 Generally, frameworks provide support for a number of activities such as
+- Dependency Injection
 - URL routing and interpreting requests (getting form parameters, handling cookies and sessions, authentication)
 - producing responses (presenting data as HTML or in other formats)
 - integrating with some frontend javascript technology (AJAX, angular, reactjs, etc)
@@ -24,6 +28,44 @@ Generally, frameworks provide support for a number of activities such as
 - Inbuilt development web server
 - logging
 - external modules, libraries management
+
+# 
+# Composer
+
+Composer is a dependency manager for PHP (similar to Bundler for Ruby apps). Composer allows developers to specify project dependencies in a composer.json file and then Composer automatically handles the rest.
+
+Composer makes it easier to keep vendor libraries out of your repo, meaning that only application code goes in the git repository. It also makes maintaining the latest versions of all required libraries easier because you can simply run composer update to get the latest compatible packages.
+
+ ## Installation Composer
+This is the easiest way to get Composer set up on your machine.
+
+Download and run [Composer-Setup.exe](https://getcomposer.org/Composer-Setup.exe). It will install the latest Composer version and set up your PATH so that you can call composer from any directory in your command line.
+
+Test usage with a new terminal:
+```
+C:\Users\username>composer -V
+Composer version 1.0.0 2016-01-10 20:34:53
+```
+Now that you've installed Composer, you are ready to use it!
+
+1. Create your composer.json file to declare your dependencies.
+
+2. The composer.json file specifies required packages.
+
+3. Run composer install (on your local machine) to install the required packages and generate a composer.lock file.
+You can even add your own code to the autoloader by adding an autoload field to composer.json
+
+```json
+{
+    "autoload": {
+        "psr-4": {"Ncc\\": "src/"}
+    }
+}
+```
+
+Composer will register a PSR-4 autoloader for the Ncc namespace.
+
+You define a mapping from namespaces to directories. The src directory would be in your project root, on the same level as vendor directory is. An example filename would be src/Foo.php containing an Ncc\Foo class. 
 
 # Laravel framework
 
@@ -47,7 +89,6 @@ Laravel includes an easy-to-understand syntax, Many different utilities support 
     **- Exception:** Contains file management and error navigation.
     
     **- Http** 
-    
         - Controller: Contains the controllers of the project.
         - Middleware: Contains file filtering and blocking requests.
         - Kernel.php: Contains file filtering and blocking requests.
@@ -67,7 +108,6 @@ Laravel includes an easy-to-understand syntax, Many different utilities support 
     - factory: Contains files that define data table columns to create virtual data.
     
 **- public:** Contains css, js, image files.
-
     - index.php: This is the root file of Laravel.
     
 **- resources:** Contains views, language (language) of the project.
@@ -96,7 +136,6 @@ Laravel includes an easy-to-understand syntax, Many different utilities support 
 
 **- artisan:** Laravel command executable file.
 
-
 ## 4. Example projects in laravel
 
 https://github.com/chiraggude/awesome-laravel
@@ -114,3 +153,5 @@ php artisan migrate
 php artisan cache:clear
 composer dump-autoload
 ```
+
+
