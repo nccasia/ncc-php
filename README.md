@@ -55,7 +55,7 @@ Note that this is not an exhaustive list, but it covers many of the core skills 
 1. Postman usage
 2. [Debugging](./others/debugging.md)
 3. [Basic Linux commands](https://github.com/MichaelCade/90DaysOfDevOps/blob/main/2022/Days/day15.md)
-4. SQL Databases: Design, Queries, Indexes
+4. SQL Databases: Design, Queries, Indexes, using ORM Eloquent
 5. [DDD - domain driven design](https://github.com/nccasia/ncc-php-bdd)
 6. Web Securities
 7. [How a browser works](https://github.com/nccasia/ncc-python-learning/blob/main/web/how_web_works.md)
@@ -85,7 +85,8 @@ Note that this is not an exhaustive list, but it covers many of the core skills 
 8. Create a user profile page with user information.
 9. Add 3rd party integration for authentication and sharing.
 10. Add the project into a docker compose
-11. Deploy on a platform as a service (PaaS) such as heroku
+11. Cover the project with unittest and functional tests
+12. Deploy on a platform as a service (PaaS) such as heroku
 
 Example:
 

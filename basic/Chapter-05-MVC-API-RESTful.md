@@ -133,4 +133,6 @@ Data formats the REST API supports include:
 
 Exercise:
 
-Desribe methods for each pattern and explain
+```
+  Desribe methods for each pattern and explain
+```

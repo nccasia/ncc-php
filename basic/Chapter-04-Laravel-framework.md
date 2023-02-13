@@ -1,5 +1,5 @@
 - [Overview](#overview)
-- [](#)
+  - [Generally, frameworks provide support for a number of activities such as](#generally-frameworks-provide-support-for-a-number-of-activities-such-as)
 - [Composer](#composer)
   - [Installation Composer](#installation-composer)
 - [Laravel framework](#laravel-framework)
@@ -16,7 +16,8 @@ A web framework (WF) or web application framework (WAF) is a software framework 
 
 It is a collection of packages or modules which allow developers to write Web applications (see WebApplications) or services without having to handle such low-level details as protocols, sockets or process/thread management.
 
-Generally, frameworks provide support for a number of activities such as
+## Generally, frameworks provide support for a number of activities such as
+
 - Dependency Injection
 - URL routing and interpreting requests (getting form parameters, handling cookies and sessions, authentication)
 - producing responses (presenting data as HTML or in other formats)
@@ -29,7 +30,6 @@ Generally, frameworks provide support for a number of activities such as
 - logging
 - external modules, libraries management
 
-# 
 # Composer
 
 Composer is a dependency manager for PHP (similar to Bundler for Ruby apps). Composer allows developers to specify project dependencies in a composer.json file and then Composer automatically handles the rest.
