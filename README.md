@@ -64,7 +64,7 @@ Note that this is not an exhaustive list, but it covers many of the core skills 
 10. Realtime application
 11. Role and permission
 12. [NCC React Basic](https://nccasia.github.io/ncc-react-basic/)
-13. [Interview questions](./others/interview.md)
+13. [Other Interview questions](./others/interview.md)
 
 ## Useful Links:
 
@@ -72,3 +72,23 @@ Note that this is not an exhaustive list, but it covers many of the core skills 
 2. https://github.com/php-school/learn-you-php
 3. https://phptherightway.com/
 4. https://github.com/marcelgsantos/learning-oop-in-php
+
+## Project for practicing:
+
+1. Create a basic blog using the Laravel framework.
+2. Create an authentication system with user registration, login, and logout.
+3. Create a blog post CRUD system.
+4. Create a comment system for blog posts.
+5. Create a search feature to search through blog posts - use a search engine such as Elastic search
+6. Add a tagging system.
+7. Create an admin panel to manage blog posts, comments and tags.
+8. Create a user profile page with user information.
+9. Add 3rd party integration for authentication and sharing.
+10. Add the project into a docker compose
+11. Deploy on a platform as a service (PaaS) such as heroku
+
+Example:
+
+https://github.com/guillaumebriday/laravel-blog
+https://github.com/juzaweb/juzacms
+https://github.com/mariocoski/laravel-blogger
