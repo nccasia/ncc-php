@@ -64,6 +64,7 @@ Note that this is not an exhaustive list, but it covers many of the core skills 
 10. Realtime application
 11. Role and permission
 12. [NCC React Basic](https://nccasia.github.io/ncc-react-basic/)
+13. [Interview questions](./others/interview.md)
 
 ## Useful Links:
 
