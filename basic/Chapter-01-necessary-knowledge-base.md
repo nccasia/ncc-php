@@ -366,6 +366,7 @@ Here’s the basic process:
 
 # Exercises
 
-1. Host a basic html page on your local machine
-2. Host a basic php file (return a string 'Hello world') on your local machine
-3. Check the above popular PHP extensions already installed in your local machine
+1. Install markdown extension and run preview this repository using markdown extension
+2. Host a basic html page on your local machine
+3. Host a basic php file (return a string 'Hello world') on your local machine
+4. Check the above popular PHP extensions already installed in your local machine
