@@ -16,6 +16,7 @@ Table of contents
     - [3.3 Magic methods, trait, reflection](#33-magic-methods-trait-reflection)
   - [4. PHP Extensions](#4-php-extensions)
   - [5. Web service components overview](#5-web-service-components-overview)
+- [Exercises](#exercises)
 
 
 ---
@@ -363,3 +364,8 @@ Here’s the basic process:
 2. The web server returns HTML (and CSS and JavaScript) or, in the case of PHP, passes the PHP request on to the PHP interpreter.
 3. The PHP interpreter interprets, or runs, the PHP. The result of that should be something that a browser can understand, like HTML, JSON string. It passes this result, or response, back to the web server and later the web browser.
 
+# Exercises
+
+1. Host a basic html page on your local machine
+2. Host a basic php file (return a string 'Hello world') on your local machine
+3. Check the above popular PHP extensions already installed in your local machine

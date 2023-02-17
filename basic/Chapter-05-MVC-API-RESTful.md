@@ -8,6 +8,7 @@
   - [What is API RESTful](#what-is-api-restful)
   - [Guiding Principles of REST](#guiding-principles-of-rest)
 - [User Authentication and authorization methods](#user-authentication-and-authorization-methods)
+- [Exercise:](#exercise)
 
 
 # MVC pattern
@@ -131,8 +132,8 @@ Data formats the REST API supports include:
 
 # User Authentication and authorization methods
 
-Exercise:
 
-```
-  Desribe methods for each pattern and explain
-```
+
+# Exercise:
+
+Desribe Authentication methods for each pattern (MVC vs API) and explain

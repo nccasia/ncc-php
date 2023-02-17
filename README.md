@@ -55,16 +55,17 @@ Note that this is not an exhaustive list, but it covers many of the core skills 
 1. Postman usage
 2. [Debugging](./others/debugging.md)
 3. [Basic Linux commands](https://github.com/MichaelCade/90DaysOfDevOps/blob/main/2022/Days/day15.md)
-4. SQL Databases: Design, Queries, Indexes, using ORM Eloquent
-5. [DDD - domain driven design](https://github.com/nccasia/ncc-php-bdd)
-6. Web Securities
-7. [How a browser works](https://github.com/nccasia/ncc-python-learning/blob/main/web/how_web_works.md)
-8. Authentication - Session, Cookies, JSON Web token
-9. NoSQL databases
-10. Realtime application
-11. Role and permission
-12. [NCC React Basic](https://nccasia.github.io/ncc-react-basic/)
-13. [Other Interview questions](./others/interview.md)
+4. [Web servers](./others/web_servers.md)
+5. SQL Databases: Design, Queries, Indexes, using ORM Eloquent
+6. [DDD - domain driven design](https://github.com/nccasia/ncc-php-bdd)
+7. Web Securities
+8. [How a browser works](https://github.com/nccasia/ncc-python-learning/blob/main/web/how_web_works.md)
+9. Authentication - Session, Cookies, JSON Web token
+10. NoSQL databases
+11. Realtime application
+12. Role and permission
+13. [NCC React Basic](https://nccasia.github.io/ncc-react-basic/)
+14. [Other Interview questions](./others/interview.md)
 
 ## Useful Links:
 

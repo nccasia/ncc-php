@@ -7,6 +7,7 @@
 - [PHPStan vs PHP CodeSniffer](#phpstan-vs-php-codesniffer)
   - [Setup \& Run PHPStan - PHP Static Analysis Tool](#setup--run-phpstan---php-static-analysis-tool)
   - [Setup \& Run code sniffer](#setup--run-code-sniffer)
+- [Exercises](#exercises)
 
 
 # Standards PSR, Coding styles, Auto Loading
@@ -26,6 +27,7 @@ Table of contents
 - [PHPStan vs PHP CodeSniffer](#phpstan-vs-php-codesniffer)
   - [Setup \& Run PHPStan - PHP Static Analysis Tool](#setup--run-phpstan---php-static-analysis-tool)
   - [Setup \& Run code sniffer](#setup--run-code-sniffer)
+- [Exercises](#exercises)
 
 ---
 
@@ -231,3 +233,8 @@ parameters:
  **Run it with php version 7.4**
  
  `vendor\bin\phpcs -p . --standard=PHPCompatibility --runtime-set testVersion 7.4 --ignore="vendor, storage, *.js,*.min.css"`
+
+
+# Exercises
+
+1. Setup on your IDE

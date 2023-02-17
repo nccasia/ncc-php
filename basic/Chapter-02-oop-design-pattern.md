@@ -1,4 +1,4 @@
-- [OOP](#oop)
+- [Chapter 2: OOP](#chapter-2-oop)
   - [1. What's OOP?](#1-whats-oop)
   - [2. Basic properties](#2-basic-properties)
 - [Design Pattern](#design-pattern)
@@ -16,7 +16,7 @@
     - [3.6. Strategy](#36-strategy)
 
 
-# OOP
+# Chapter 2: OOP
 
 ## 1. What's OOP?
 

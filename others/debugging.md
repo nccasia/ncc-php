@@ -1,8 +1,11 @@
-- [Check settings in php.ini](#check-settings-in-phpini)
-- [Activate from browser](#activate-from-browser)
-- [Activate from postman](#activate-from-postman)
-- [Activate from console](#activate-from-console)
+- [Xdebug](#xdebug)
+  - [Check settings in php.ini](#check-settings-in-phpini)
+  - [Activate from browser](#activate-from-browser)
+  - [Activate from postman](#activate-from-postman)
+  - [Activate from console](#activate-from-console)
+- [Logging](#logging)
 
+# Xdebug
 
 ## Check settings in php.ini
 
@@ -45,3 +48,12 @@ Example
 ```
 php -dxdebug.remote_autostart=on -dxdebug.remote_connect_back=off -dxdebug.remote_host=127.0.0.1 -dxdebug.idekey=PHPSTORM -dxdebug.mode-debug -dxdebug.client_port=9003 artisan command_name
 ```
+
+# Logging
+
+What do i need to check when I see an error response from a webserver running laravel
+
+1. Check the webserver access log to see if the request comes to server
+2. Check the webserver error log for any errors that may be causing the issue.
+3. Check the Laravel application log for any errors that may be causing the issue.
+4. Try to setup debug or dump values inside the endpoints

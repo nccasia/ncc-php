@@ -1,3 +1,15 @@
+- [CI, CD - Github action](#ci-cd---github-action)
+  - [Standard CI pipeline](#standard-ci-pipeline)
+  - [Standard CD pipeline](#standard-cd-pipeline)
+  - [GitHub Actions](#github-actions)
+- [Working rules](#working-rules)
+- [Tips and tricks for a developer](#tips-and-tricks-for-a-developer)
+  - [Readability and maintainability:](#readability-and-maintainability)
+  - [Quality and expandability:](#quality-and-expandability)
+- [Docker:](#docker)
+- [Exercises](#exercises)
+
+
 # CI, CD - Github action
 
 Continuous integration and continuous delivery
@@ -90,3 +102,8 @@ https://github.com/alexeymezenin/laravel-best-practices
 4. How to build image, run and stop, inspect container ?
 5. Docker-compose
 6. Docker Network 
+
+# Exercises
+
+1. Create a simple empty laravel repository, create github action to run unittest on each merge request to master branch
+2. Docker tutorial https://www.docker.com/101-tutorial/

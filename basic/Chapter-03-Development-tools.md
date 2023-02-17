@@ -24,6 +24,7 @@
   - [6. Chrome dev tool](#6-chrome-dev-tool)
   - [7. Ngrok service](#7-ngrok-service)
   - [8. SSH connection and key generation](#8-ssh-connection-and-key-generation)
+- [Excersices:](#excersices)
 
 ## 1. GIT
 
@@ -231,17 +232,16 @@ This tab shows the js files that the browser can load. At this tab, you can debu
 
 ngrok secure introspectable tunnels to localhost webhook development tool and debugging tool.
 
-Exersice:
-```
-run and publish a local website via ngrok
-
-check request logs
-```
+ngrok is a simplified API-first ingress-as-a-service that adds connectivity,
+security, and observability to your apps with no code changes
 
 ## 8. SSH connection and key generation
-Exersice:
-```
-learn how to generate a SSH key
 
-how to connect to a server via SSH
-```
+
+
+# Excersices:
+
+1. Open Chrome devtool, open google.com, list out all css, js requests
+2. run and publish a local website via ngrok, check request logs
+3. Create a bitbucket account, generate a SSH key, push a local repo onto Bitbucket
+   
