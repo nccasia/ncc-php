@@ -64,6 +64,7 @@ https://github.com/alexeymezenin/laravel-best-practices
  
  
 ## Quality and expandability:
+
  - All variables are in the smallest scope possible
  - There is no dead code (inaccessible at Runtime)
  - No code that can be replaced with library functions
@@ -80,11 +81,6 @@ https://github.com/alexeymezenin/laravel-best-practices
  - A class should have only a single responsibility
  - Many client-specific interfaces are better than one general-purpose interface
  - Depend upon Abstractions. Do not depend upon concretions
-
-## Tools (see Wordpress plugin)
- - Unittests: php-coveralls
- - phpcs
- - phpstan
 
 # Docker:
 
