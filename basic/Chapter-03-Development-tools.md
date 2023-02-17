@@ -24,6 +24,10 @@
   - [6. Chrome dev tool](#6-chrome-dev-tool)
   - [7. Ngrok service](#7-ngrok-service)
   - [8. SSH connection and key generation](#8-ssh-connection-and-key-generation)
+    - [methods to connect to SSH server](#methods-to-connect-to-ssh-server)
+      - [1. Using an SSH Client](#1-using-an-ssh-client)
+      - [2. Using an SSH Key](#2-using-an-ssh-key)
+      - [3. Using a Browser-Based SSH Client (normally for cloud sevices)](#3-using-a-browser-based-ssh-client-normally-for-cloud-sevices)
 - [Excersices:](#excersices)
 
 ## 1. GIT
@@ -237,7 +241,23 @@ security, and observability to your apps with no code changes
 
 ## 8. SSH connection and key generation
 
+SSH (Secure Shell) is a protocol used to securely connect to a remote computer or server. It provides a secure channel over an unsecured network in a client-server architecture, connecting an SSH client application with an SSH server. SSH allows users to securely transfer data, execute commands, and manage remote servers, among other functions.
 
+When you want to connect to the server to set things up, check log, do deployment, you will need to use a SSH connection
+
+### methods to connect to SSH server
+
+#### 1. Using an SSH Client
+
+The most common way to access a remote SSH server is to use an SSH client application. Popular SSH clients include PuTTY (for Windows), Terminal (for MacOS) or OpenSSH (for Linux). You will need to enter the IP address or hostname of the server, as well as the username and password for the account you wish to access. Once connected, you will be able to access the remote server's command line interface.
+
+#### 2. Using an SSH Key
+
+An SSH key is a secure way of authenticating with an SSH server without using a password. To use an SSH key, you will need to generate a public/private key pair on your local computer, and then upload the public key to the remote SSH server. Once the public key is uploaded, you will be able to authenticate with the server without needing to enter a password.
+
+#### 3. Using a Browser-Based SSH Client (normally for cloud sevices)
+
+If you don't have access to an SSH client, you can also connect to a remote SSH server using a browser-based SSH client. These clients are usually web-based applications that allow you to connect to a remote server using your web browser. Popular browser-based SSH clients include Termius and WebSSH.
 
 # Excersices:
 
