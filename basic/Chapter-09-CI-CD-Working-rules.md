@@ -88,8 +88,9 @@ https://github.com/alexeymezenin/laravel-best-practices
 
 # Docker:
 
-1. What is Docker? - basic things like image, container, host machine, share resource
+1. What is Docker? - basic things like image, container, daemon, host machine, share resource
 2. How does Docker work?
 3. What are the benefits of using Docker?
 4. How to build image, run and stop, inspect container ?
 5. Docker-compose
+6. Docker Network 
