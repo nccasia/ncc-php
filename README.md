@@ -88,8 +88,13 @@ Note that this is not an exhaustive list, but it covers many of the core skills 
 11. Cover the project with unittest and functional tests
 12. Deploy on a platform as a service (PaaS) such as heroku
 
-Example:
+Blog project Example:
 
-https://github.com/guillaumebriday/laravel-blog
-https://github.com/juzaweb/juzacms
-https://github.com/mariocoski/laravel-blogger
+1. https://github.com/guillaumebriday/laravel-blog
+2. https://github.com/juzaweb/juzacms
+3. https://github.com/mariocoski/laravel-blogger
+
+Docker project Example:
+
+1. https://github.com/aschmelyun/docker-compose-laravel
+2. https://github.com/supermavster/docker-laravel-8
