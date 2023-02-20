@@ -9,6 +9,7 @@
   - [Guiding Principles of REST](#guiding-principles-of-rest)
 - [User Authentication and authorization methods](#user-authentication-and-authorization-methods)
 - [Exercise:](#exercise)
+- [Result](#result)
 
 
 # MVC pattern
@@ -137,3 +138,29 @@ Data formats the REST API supports include:
 # Exercise:
 
 Desribe Authentication methods for each pattern (MVC vs API) and explain
+
+# Result
+
+**- Authentication MVC:**
+  - Create Migration
+  
+![Alt text](images/Migration.PNG)
+
+  - Create Model
+
+![Alt text](images/Model.PNG)
+
+  - Create Route
+
+![Alt text](images/Route.PNG)
+
+  - Handle login
+
+![Alt text](images/HandleLogin.PNG)
+ User enters password and username using Auth::attempt method to check input data
+
+**- Authentication API:**
+
+- Add Migration
+  
+![Alt text](images/Migration-update.PNG)
