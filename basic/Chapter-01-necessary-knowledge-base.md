@@ -388,6 +388,5 @@ Here’s the basic process:
    
     * Xdebug
 ![Xdebug](images/Xdebug.png?raw=true "Css")
-
     * PHP Extension
 ![Xdebug](images/IntelliSense.png?raw=true "Css")
