@@ -164,3 +164,11 @@ Desribe Authentication methods for each pattern (MVC vs API) and explain
 - Add Migration
   
 ![Alt text](images/Migration-update.PNG)
+
+- Create User
+
+![Alt text](images/Create-User-API.PNG)
+
+- Login User
+
+![Alt text](images/LoginAPI.PNG)
