@@ -29,6 +29,7 @@
       - [2. Using an SSH Key](#2-using-an-ssh-key)
       - [3. Using a Browser-Based SSH Client (normally for cloud sevices)](#3-using-a-browser-based-ssh-client-normally-for-cloud-sevices)
 - [Excersices:](#excersices)
+- [Result](#result)
 
 ## 1. GIT
 
@@ -264,4 +265,32 @@ If you don't have access to an SSH client, you can also connect to a remote SSH 
 1. Open Chrome devtool, open google.com, list out all css, js requests
 2. run and publish a local website via ngrok, check request logs
 3. Create a bitbucket account, generate a SSH key, push a local repo onto Bitbucket
-   
+
+# Result
+1. Chrome devtool   
+    * css
+![Alt text](images/css.png)
+
+    * js
+![Alt text](images/js.png)
+
+2. Ngrok
+    * Setting Cmd
+![Alt text](images/SettingCMD.png)
+
+    * Setting OSPanel
+![Alt text](images/SettingOSPanel.png)
+
+    * Request Login
+![Alt text](images/RequestLogin.png)
+
+3. Bitbucket
+    * Create a Bitbucket account
+
+![Alt text](images/BitbucketAccount.png)
+
+    * Generate a SSH key
+![Alt text](images/GenerateSSHKey.png)
+
+    * Responsitories Bitbucket
+![Alt text](images/ResponsitoriesBitbucket.png)
