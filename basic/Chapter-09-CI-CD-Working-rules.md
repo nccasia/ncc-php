@@ -8,6 +8,7 @@
   - [Quality and expandability:](#quality-and-expandability)
 - [Docker:](#docker)
 - [Exercises](#exercises)
+- [Exercises](#exercises-1)
 
 
 # CI, CD - Github action
@@ -107,3 +108,7 @@ https://github.com/alexeymezenin/laravel-best-practices
 
 1. Create a simple empty laravel repository, create github action to run unittest on each merge request to master branch
 2. Docker tutorial https://www.docker.com/101-tutorial/
+
+# Exercises
+
+1. Github Action unittest https://github.com/ConCongSan/thinh/
