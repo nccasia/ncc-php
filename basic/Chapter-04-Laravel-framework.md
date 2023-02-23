@@ -8,6 +8,7 @@
   - [3. The structure of Laravel](#3-the-structure-of-laravel)
   - [4. Example projects in laravel](#4-example-projects-in-laravel)
   - [5. Commons artisan commands](#5-commons-artisan-commands)
+- [Excersices:](#excersices)
 
 
 # Overview
@@ -155,3 +156,13 @@ composer dump-autoload
 ```
 
 
+# Excersices:
+
+1. Init an empty Laravel project
+2. Serve the project on local environment using Open Server
+3. Create a new command send-mail, accepting a filename
+4. The command read a list of email addresses inside the file
+5. Change queue job setting in .env file to database
+6. Each email address, create a queue job to send a greeting email to the address
+7. Run artisan queue worker to process sending email
+8. What happends if there is exception inside one job ?
