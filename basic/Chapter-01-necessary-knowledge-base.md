@@ -17,6 +17,7 @@ Table of contents
   - [4. PHP Extensions](#4-php-extensions)
   - [5. Web service components overview](#5-web-service-components-overview)
 - [Exercises](#exercises)
+- [Result](#result)
 
 
 ---
@@ -370,3 +371,22 @@ Here’s the basic process:
 2. Host a basic html page on your local machine
 3. Host a basic php file (return a string 'Hello world') on your local machine
 4. Check the above popular PHP extensions already installed in your local machine
+   
+# Result
+1. Markdown Extension
+![Markdown Extension](images/Markdown-Extension.png?raw=true "Css")
+
+2. Basic Html page
+
+![Basic Html](images/Basic-html.png?raw=true "Css")
+
+3. Basic php file
+
+![Basic php](images/Basic-php.png?raw=true "Css")
+
+4. PHP extensions
+   
+    * Xdebug
+![Xdebug](images/Xdebug.png?raw=true "Css")
+    * PHP Extension
+![Xdebug](images/IntelliSense.png?raw=true "Css")
